@@ -2,7 +2,8 @@
 
 namespace ExitoLogGames.App.Persistencia
 {
-    public class Class1
+    public class Connection : DbContext
     {
+
     }
 }
