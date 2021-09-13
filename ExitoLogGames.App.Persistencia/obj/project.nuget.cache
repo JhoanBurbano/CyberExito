@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DBdmOTXnp/vKIajqYO/Yn9FoKa8Ei9Ja1sL9QMnhnQyC8D93GYD1J37CkTJymfdHpi5JEbxB9kcSVva5Uhs8Nw==",
+  "success": true,
+  "projectFilePath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
