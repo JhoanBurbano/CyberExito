@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {}
+    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {}
   },
   "projects": {
-    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
+    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
+        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
         "projectName": "ExitoLogGames.App.Persistencia",
-        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
+        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\",
-        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Persistencia\\obj\\",
+        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jhoan Burbano\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
-      "projectName": "ExitoLogGames.App.Dominio",
-      "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
+      "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Shell\\ExitoLogGames.App.Shell.csproj",
+      "projectName": "ExitoLogGames.App.Shell",
+      "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Shell\\ExitoLogGames.App.Shell.csproj",
       "packagesPath": "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\",
-      "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App.Dominio\\obj\\",
+      "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Shell\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jhoan Burbano\\AppData\\Roaming\\NuGet\\NuGet.Config"
