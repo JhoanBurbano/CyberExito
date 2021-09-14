@@ -5,6 +5,6 @@ namespace ExitoLogGames.App.Dominio
         public int IdEmploy{get; set;}
         public string Name{get; set;}
         public string LastName{get; set;}
-        public DataTime IdEmploy{get; set;}
+        public DateTime Date{get; set;}
     }
 }
