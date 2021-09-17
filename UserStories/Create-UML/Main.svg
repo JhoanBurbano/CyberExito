@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 900 1158" style="enable-background:new 0 0 900 1158;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.2;fill:#C0C0C0;enable-background:new    ;}
+	.st1{fill:#B0FFC1;}
+	.st2{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st3{font-family:'Roboto-Bold';}
+	.st4{font-size:15px;}
+	.st5{font-family:'Roboto-Black';}
+	.st6{fill:#FFFFFF;}
+</style>
+<g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="207" y="47" class="st0" width="304" height="154"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="200" y="40" class="st1" width="304" height="154"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M200,40h304v154H200V40z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M200,67h304"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M200,160h304"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 318.5759 61.5)" class="st3 st4">Empleado</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 205 86.5)" class="st5 st4">+IdEmpleado: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 205 103.5)" class="st5 st4">+Nombre: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 205 120.5)" class="st5 st4">+Apellidos: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 205 137.5)" class="st5 st4">+Cedula: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 205 154.5)" class="st5 st4">+Sucursal: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="15" y="255" class="st0" width="232" height="120"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="8" y="248" class="st1" width="232" height="120"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M8,248h232v120H8V248z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M8,275h232"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M8,317h232"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 72.0898 269.5)" class="st3 st4">AdminCompras</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 13 294.5)" class="st5 st4">+StockProductos: List&lt;Producto&gt;</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 13 311.5)" class="st5 st4">+ListaCompras: List&lt;Compras&gt;</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 13 336.5)" class="st5 st4">+ActualizarStock(Producto)</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 13 353.5)" class="st5 st4">+MostrarStock()</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="287" y="271" class="st0" width="271.2" height="112"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="280" y="264" class="st1" width="271.2" height="112"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M280,264h271.2v112H280V264z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M280,291h271.2"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M280,316h271.2"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 370.8232 285.5)" class="st3 st4">AdminVentas</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 310.5)" class="st5 st4">+ListaFacturaVentas: List&lt;Vendedor&gt;</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 335.5)" class="st5 st4">+AgregarFactura(List, string)</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 352.5)" class="st5 st4">+GenerarReporteVentas()</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 369.5)" class="st5 st4">+GenerarReporteCompras()</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="647" y="303" class="st0" width="248" height="64"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="640" y="296" class="st1" width="248" height="64"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M640,296h248v64H640V296z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M640,323h248"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M640,348h248"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 732.0298 317.5)" class="st3 st4">Vendedor</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 645 342.5)" class="st5 st4">+ListaVentas: List&lt;Ventas&gt;</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="615" y="55" class="st0" width="216" height="137"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="608" y="48" class="st1" width="216" height="137"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M608,48h216v137H608V48z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M608,75h216"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M608,134h216"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 697.521 69.5)" class="st3 st4">Login</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 613 94.5)" class="st5 st4">+Usuario: String</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 613 111.5)" class="st5 st4">+Password: String</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 613 128.5)" class="st5 st4">+PrimerIngreso: Boolean</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 613 153.5)" class="st5 st4">+CambioContraseña()</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="159" y="447" class="st0" width="229.5" height="80"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="152" y="440" class="st1" width="229.5" height="80"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M152,440h229.5v80H152V440z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M152,467h229.5"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M152,509h229.5"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 236.4702 461.5)" class="st3 st4">Compras</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 157 486.5)" class="st5 st4">+ComprasId</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 157 503.5)" class="st5 st4">+Compra: List&lt;Pedido&gt;</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="415" y="447" class="st0" width="216" height="80"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="408" y="440" class="st1" width="216" height="80"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M408,440h216v80H408V440z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M408,467h216"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M408,509h216"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 492.8811 461.5)" class="st3 st4">Ventas</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 413 486.5)" class="st5 st4">+VentasId: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 413 503.5)" class="st5 st4">+Venta: List&lt;Pedido&gt;</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="287" y="807" class="st0" width="160" height="154"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="280" y="800" class="st1" width="160" height="154"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M280,800h160v154H280V800z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M280,827h160"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M280,937h160"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 329.5825 821.5)" class="st3 st4">Producto</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 846.5)" class="st5 st4">+IdProducto: Int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 863.5)" class="st5 st4">+Nombre: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 880.5)" class="st5 st4">+Version: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 897.5)" class="st5 st4">+Fabtricante: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 914.5)" class="st5 st4">+Precio: Double</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 285 931.5)" class="st5 st4">+Costo: Double</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="31" y="1031" class="st0" width="226" height="154"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="24" y="1024" class="st1" width="226" height="154"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M24,1024h226v154H24V1024z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M24,1051h226"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M24,1144h226"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 109.667 1045.5)" class="st3 st4">Consola</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 29 1070.5)" class="st5 st4">+CapacidadAlmacenamiento: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 29 1087.5)" class="st5 st4">+VelocidadRam: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 29 1104.5)" class="st5 st4">+VelocidadProcesamiento: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 29 1121.5)" class="st5 st4">+CantidadControles: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 29 1138.5)" class="st5 st4">+Storage: string</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="279" y="1047" class="st0" width="119.2" height="61"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="272" y="1040" class="st1" width="119.2" height="61"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M272,1040h119.2v61H272V1040z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M272,1067h119.2"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M272,1092h119.2"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 307.2964 1061.5)" class="st3 st4">Control</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 277 1086.5)" class="st5 st4">+Compatibilidad</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="487" y="1039" class="st0" width="126.8" height="64"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="480" y="1032" class="st1" width="126.8" height="64"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M480,1032h126.8v64H480V1032z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M480,1059h126.8"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M480,1084h126.8"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 505.9561 1053.5)" class="st3 st4">Videojuego</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 485 1078.5)" class="st5 st4">+Compatibilidad</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M122,1024v-70h158"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M259.7,962.4L280,954l-20.3-8.4"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M259.7,962.4L280,954l-20.3-8.4V962.4"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M355,1040v-86"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M363.4,974.3L355,954l-8.4,20.3"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M363.4,974.3L355,954l-8.4,20.3H363.4"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M544,1032v-78H440"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M460.3,945.6L440,954l20.3,8.4"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M460.3,945.6L440,954l20.3,8.4V945.6"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M436,520v80"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path d="M431.8,589.8L436,600l4.2-10.2L436,578"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M431.8,589.8L436,600l4.2-10.2L436,578L431.8,589.8"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 418.6385 548.5)" class="st5 st4">1</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 411.5 585.5)" class="st5 st4">1..*</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M385,264v-70"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M393.4,214.3L385,194l-8.4,20.3"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M393.4,214.3L385,194l-8.4,20.3H393.4"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M504,185h104"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M587.7,193.4L608,185l-20.3-8.4"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M587.7,193.4L608,185l-20.3-8.4V193.4"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M280,308h-40"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path d="M250.2,303.8L240,308l10.2,4.2L262,308"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M250.2,303.8L240,308l10.2,4.2L262,308L250.2,303.8"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 253.6385 302.5)" class="st5 st4">1</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 249.5 302.5)" class="st5 st4">1..*</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M376,520v80"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path d="M371.8,589.8L376,600l4.2-10.2L376,578"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M371.8,589.8L376,600l4.2-10.2L376,578L371.8,589.8"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 358.6385 548.5)" class="st5 st4">1</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 351.5 585.5)" class="st5 st4">1..*</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M752,360v80H624"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M634.2,435.8L624,440l10.2,4.2L646,440"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M634.2,435.8L624,440l10.2,4.2L646,440L634.2,435.8"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 633.5 434.5)" class="st5 st4">0..*</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M201,368v72"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M196.8,429.8L201,440l4.2-10.2L201,418"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M196.8,429.8L201,440l4.2-10.2L201,418L196.8,429.8"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 176.5 425.5)" class="st5 st4">0..*</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="279" y="607" class="st0" width="164.3" height="112"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<rect x="272" y="600" class="st1" width="164.3" height="112"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M272,600h164.3v112H272V600z"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M272,627h164.3"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M272,703h164.3"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 330.9536 621.5)" class="st3 st4">Pedido</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 277 646.5)" class="st5 st4">+PedidoId: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 277 663.5)" class="st5 st4">+IdPoducto</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 277 680.5)" class="st5 st4">+Cantidad: int</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 277 697.5)" class="st5 st4">+Operacion: char</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M356,713l2,86"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path d="M353.6,788.9L358,799l4-10.3l-4.5-11.7"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M353.6,788.9L358,799l4-10.3l-4.5-11.7L353.6,788.9"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 339.6385 741.5)" class="st5 st4">1</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 333.5 784.5)" class="st5 st4">1..*</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M552,323l87,2"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path d="M628.7,329l10.3-4l-10.1-4.4l-11.9,3.9"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M628.7,329l10.3-4l-10.1-4.4l-11.9,3.9L628.7,329"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path class="st2" d="M0,0"/>
+			<text transform="matrix(1 0 0 1 568.6385 342.5)" class="st5 st4">1</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<g>
+			<path d="M0,0"/>
+			<text transform="matrix(1 0 0 1 605.5 343.5)" class="st5 st4">1..*</text>
+		</g>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M197,247l62-52"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M248.8,214.5L259,195l-21,6.6"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M248.8,214.5L259,195l-21,6.6L248.8,214.5"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M700,295L504,195"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st6" d="M525.9,196.7L504,195l14.3,16.7"/>
+	</g>
+	<g transform="translate(2,-30) scale(1,1)">
+		<path class="st2" d="M525.9,196.7L504,195l14.3,16.7L525.9,196.7"/>
+	</g>
+</g>
+</svg>
