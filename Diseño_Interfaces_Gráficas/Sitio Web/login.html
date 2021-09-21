@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exito Gaming</title>
+    <title>Login - Exito Gaming</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/SequelSans/SequelSans.css">
     <link rel="shortcut icon" href="./img/LogoExito.svg">
 </head>
@@ -99,7 +100,7 @@
         </div>
         <nav>
             <ul>
-                <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.44 24.52">
+                <li id="Rol"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.44 24.52">
                             <defs></defs>
                             <g id="Capa_2" data-name="Capa 2">
                                 <g id="Capa_2-2" data-name="Capa 2">
@@ -111,8 +112,8 @@
                                     <circle class="cls-1" cx="25.89" cy="21.73" r="2.79" />
                                 </g>
                             </g>
-                        </svg></i><a href="./login.html">Administrador de compras</a></li>
-                <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.64 30.79">
+                        </svg></i><a href="">Administrador de compras</a></li>
+                <li class="hidden"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.64 30.79">
                             <defs></defs>
                             <g id="Capa_2" data-name="Capa 2">
                                 <g id="Capa_2-2" data-name="Capa 2">
@@ -122,8 +123,8 @@
                                     <rect class="cls-1" x="8.05" y="11.68" width="3.64" height="0.99" />
                                 </g>
                             </g>
-                        </svg></i> <a href="./login.html">Administrador de Ventas</a></li>
-                <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.44 30.17">
+                        </svg></i> <a href="">Administrador de Ventas</a></li>
+                <li class="hidden"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.44 30.17">
                             <defs></defs>
                             <g id="Capa_2" data-name="Capa 2">
                                 <g id="Capa_2-2" data-name="Capa 2">
@@ -131,19 +132,35 @@
                                         d="M0,0V30.17H22.44V0ZM10.09,26.79H3.85V20.55h6.24Zm0-8.53H3.85V12h6.24Zm8.5,8.53H12.35V20.55h6.24Zm0-8.53H12.35V12h6.24Zm0-8.91H3.85V3.45H18.59Z" />
                                 </g>
                             </g>
-                        </svg></i><a href="./login.html">Vendedor</a></li>
+                        </svg></i><a href="">Vendedor</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <div class="slider">
-            <div class="ctr bfr"></div>
-            <div class="ctr nxt"></div>
-            <img src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/7548a464-83f7-4aef-a3db-8c267a488ecd___03f6ce870391828db60d2ee704cdcd9b.jpg"
-                alt="">
-            <img src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/1dce9f33-3dc0-445c-b54c-22dcb435d9be___888442276d85bcf30d4e0231c915222b.jpg"
-                alt="">
-            <img src="./img/Slide1.png" alt="">
+        <div class="formulario">
+            <a href="./forget-password.html">¿Olvidó su contraseña?</a>
+            <div>
+                <form name="login" action="">
+                    <input type="text" placeholder="Usuario">
+                    <input type="text" placeholder="Contraseña">
+                    <label for="login">*Digite su nombre de usuario</label>
+
+                </form>
+                <button type="submit" value="" for="login">
+                    <div class="btn-svg">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <input type="submit" for="login">
+                    </div>
+                </button>
+            </div>
+            <p class="name">Nombre De Usuario</p>
+            <img src="./img/user.svg" alt="">
+            <div class="menu">
+                <a href="./login.html"><p class="txt_action active">Iniciar Sesión</p></a>
+                <a href="./singup.html"><p class="txt_action">Registrarse</p></a>
+            </div>
         </div>
     </div>
     <footer>
