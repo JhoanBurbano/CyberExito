@@ -1,0 +1,27 @@
+(Como si fuera la Libreria de Mysql)dotnet tool install --global dotnet-ef
+
+(Actualizacion de la libreria)dotnet tool update global dotnet ef
+
+(Paquetes de instalacion en la capa de persistencia)dotnet add package Microsoft.EntityFrameworkCore --version 5.0.0
+
+(Paquetes de instalacion en la capa de persistencia)dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.0
+
+(Paquetes de instalacion en la capa de persistencia y presentacion)dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.0
+
+(Paquetes de instalacion en la capa de persistencia)dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.0
+
+	//Metodo para poder crear la base de datos y sus respectivas tablas
+	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
+		if(!optionsBuilder.IsConfigured){
+			optionsBuilder.UseSQLServer("Data source = (localdb)\\MSSQLLocalDB; Initial Catalog = test.Data");
+		}
+	}
+
+
+(Migracion inicial)dotnet ef migrations add Inicial --startup-project ..\Consola\   
+
+(Creacion BD)dotnet ef database update --startup-project ..\Conmebol.App.Consola\
+
+	
+	
+	

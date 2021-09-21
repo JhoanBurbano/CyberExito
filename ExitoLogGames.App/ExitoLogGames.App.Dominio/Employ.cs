@@ -1,10 +1,12 @@
+
 namespace ExitoLogGames.App.Dominio
 {
-    public class Employ
+    public class Employ : Login
     {
-        public int IdEmploy{get; set;}
-        public string Name{get; set;}
-        public string LastName{get; set;}
-        public DateTime Date{get; set;}
+        public int EmployId{get;set;}
+        public string Nombre{get;set;}
+        public string Apellido{get;set;}
+        public string Cedula{get;set;}
+        public string Sucursal{get;set;}
     }
 }
