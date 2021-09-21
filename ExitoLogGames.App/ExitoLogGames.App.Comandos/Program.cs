@@ -17,7 +17,8 @@ namespace ExitoLogGames.App.Comandos
             employ.Password=employ.Cedula;
             Console.WriteLine("Password: " + employ.Password);
             Connection conexion = new Connection();
-            conexion.Add(employ);
+            conexion.empleados.Add(employ);
+            conexion.SaveChanges();
         }
     }
 }
