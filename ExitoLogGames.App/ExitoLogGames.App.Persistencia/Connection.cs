@@ -7,6 +7,9 @@ namespace ExitoLogGames.App.Persistencia
     public class Connection : DbContext
     {
         public DbSet<Employ> empleados{get;set;}
+        // public DbSet<Sales> ventas{get;set;}
+        // public DbSet<Compras> compras{get;set;}
+        public DbSet<Consola> consolas{get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder){
             if(!builder.IsConfigured){

@@ -8,16 +8,18 @@ namespace ExitoLogGames.App.Comandos
     {
         static void Main(string[] args)
         {
-            Employ employ = new Employ();
-            employ.Nombre = "Juan";
-            employ.Apellido = "Muñoz";
-            employ.Cedula = "11223757";
-            employ.Sucursal = "ValleDelili";
-            employ.Usuario="juan@email.com";
-            employ.Password=employ.Cedula;
-            Console.WriteLine("Password: " + employ.Password);
             Connection conexion = new Connection();
-            conexion.empleados.Add(employ);
+            Consola consola = new Consola();
+            consola.Nombre="XBOX";
+            consola.Version="2021";
+            consola.Fabricante="Microsoft";
+            consola.Precio=1500000;
+            consola.Costo=1000000;
+            consola.VelocidadProcesamiento="5 Mhz";
+            consola.VelocidadRam="100m/s";
+            consola.Storage="SSD";
+            consola.CantidadControles=4;
+            conexion.consolas.Add(consola);
             conexion.SaveChanges();
         }
     }

@@ -6,3 +6,4 @@ namespace ExitoLogGames.App.Dominio
 
 
     }
+}

@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 
 namespace ExitoLogGames.App.Dominio
 {
-    public class Consola
+    public class Consola : Product
     {
-        public string CapacidadAlmacenamiento {get; set;};
+        public int Id{get;set;}
+        public string CapacidadAlmacenamiento {get; set;}
         public string VelocidadRam {get; set;}
         public string VelocidadProcesamiento {get; set;}
         public int CantidadControles {get; set;}
