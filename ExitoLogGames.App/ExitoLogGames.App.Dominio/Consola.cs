@@ -15,3 +15,5 @@ namespace ExitoLogGames.App.Dominio
         public string Storage {get; set;}
     }
 }
+
+//Sé que estás ahí Neo. ¿Quieres conocer la Matrix?
