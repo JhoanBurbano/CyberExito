@@ -7,3 +7,12 @@ D:\Sebas Burbano\Codigo\C#\Workspace\CyberExito\ExitoLogGames.App\ExitoLogGames.
 D:\Sebas Burbano\Codigo\C#\Workspace\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.csproj.CoreCompileInputs.cache
 D:\Sebas Burbano\Codigo\C#\Workspace\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.dll
 D:\Sebas Burbano\Codigo\C#\Workspace\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.pdb
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.csprojAssemblyReference.cache
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.AssemblyInfo.cs
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.dll
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.pdb
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.deps.json
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.dll
+C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.pdb
