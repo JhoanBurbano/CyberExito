@@ -6,10 +6,15 @@ namespace ExitoLogGames.App.Persistencia
 {
     public class Connection : DbContext
     {
-        public DbSet<Employ> empleados{get;set;}
-        // public DbSet<Sales> ventas{get;set;}
-        // public DbSet<Compras> compras{get;set;}
+        public DbSet<AdminCompras> compradores{get;set;}
+        public DbSet<Vendedor> vendedores{get;set;}
+        public DbSet<AdminVentas> administradores{get;set;}
+        public DbSet<Sales> ventas{get;set;}
+        public DbSet<Compras> compras{get;set;}
+        public DbSet<Pedidos> pedidos{get;set;}
         public DbSet<Consola> consolas{get;set;}
+        public DbSet<Control> controles{get;set;}
+        public DbSet<Videojuego> videojuegos{get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder){
             if(!builder.IsConfigured){
