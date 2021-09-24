@@ -4,14 +4,16 @@ using ExitoLogGames.App.Persistencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ExitoLogGames.App.Persistencia.Migrations
 {
     [DbContext(typeof(Connection))]
-    partial class ConnectionModelSnapshot : ModelSnapshot
+    [Migration("20210924194640_TablaFactura")]
+    partial class TablaFactura
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -187,39 +189,6 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                     b.ToTable("controles");
                 });
 
-            modelBuilder.Entity("ExitoLogGames.App.Dominio.Factura", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("PedidoConsolasId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PedidoControlesId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PedidoVideojuegosId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Total")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PedidoConsolasId");
-
-                    b.HasIndex("PedidoControlesId");
-
-                    b.HasIndex("PedidoVideojuegosId");
-
-                    b.ToTable("facturas");
-                });
-
             modelBuilder.Entity("ExitoLogGames.App.Dominio.Pedidos", b =>
                 {
                     b.Property<int>("Id")
@@ -370,27 +339,6 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                     b.Navigation("Comprador");
 
                     b.Navigation("Pedido");
-                });
-
-            modelBuilder.Entity("ExitoLogGames.App.Dominio.Factura", b =>
-                {
-                    b.HasOne("ExitoLogGames.App.Dominio.Pedidos", "PedidoConsolas")
-                        .WithMany()
-                        .HasForeignKey("PedidoConsolasId");
-
-                    b.HasOne("ExitoLogGames.App.Dominio.Pedidos", "PedidoControles")
-                        .WithMany()
-                        .HasForeignKey("PedidoControlesId");
-
-                    b.HasOne("ExitoLogGames.App.Dominio.Pedidos", "PedidoVideojuegos")
-                        .WithMany()
-                        .HasForeignKey("PedidoVideojuegosId");
-
-                    b.Navigation("PedidoConsolas");
-
-                    b.Navigation("PedidoControles");
-
-                    b.Navigation("PedidoVideojuegos");
                 });
 
             modelBuilder.Entity("ExitoLogGames.App.Dominio.Pedidos", b =>

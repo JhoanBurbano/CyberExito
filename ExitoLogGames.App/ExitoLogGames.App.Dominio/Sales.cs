@@ -4,7 +4,7 @@ namespace ExitoLogGames.App.Dominio
     {
         public int Id { get; set; }
         public Vendedor Vendedor{get;set;}
-        public Pedidos pedidos{get;set;}
+        public Factura Factura{get;set;}
 
 
     }

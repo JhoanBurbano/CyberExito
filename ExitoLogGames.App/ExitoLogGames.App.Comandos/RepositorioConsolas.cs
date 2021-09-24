@@ -19,6 +19,7 @@ namespace ExitoLogGames.App.Comandos
 
         Consola IRepositorioConsolas.AddConsola(Consola consola){
             var consol = conexion.consolas.Add(consola);
+            conexion.SaveChanges();
             return  consol.Entity; 
             Console.WriteLine("Se agrego la consola correctamente");
         }
@@ -37,6 +38,7 @@ namespace ExitoLogGames.App.Comandos
                 consol.CantidadControles=consola.CantidadControles;
                 consol.Storage=consola.Storage;
             }
+            conexion.SaveChanges();
             return consol;
         }
 
@@ -45,6 +47,7 @@ namespace ExitoLogGames.App.Comandos
             if(consol!=null)
                 return;
             conexion.consolas.Remove(consol);
+            conexion.SaveChanges();
             Console.WriteLine("Se elimino la consola correctamente");            
         }
 
