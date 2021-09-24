@@ -13,19 +13,24 @@ namespace ExitoLogGames.App.Comandos
             this.conexion = conexion;
         }
 
-        IEnumerable<Consolas> IrepositorioConsolas.GetAllConsolas(){
+        IEnumerable<Consola> IRepositorioConsolas.GetAllConsolas(){
             return conexion.consolas;
         }
 
-        Consola IrepositorioConsolas.AddConsola(Consola consola){
+        Consola IRepositorioConsolas.AddConsola(Consola consola){
             var consol = conexion.consolas.Add(consola);
             return  consol.Entity; 
-            Console.WriteLines("Se agrego la consola correctamente");
+            Console.WriteLine("Se agrego la consola correctamente");
         }
 
-        Consola IrepositorioConsolas.UpdateConsola(Consola consola){
-            var consol = conexion.consolas.FirstOrDefault( c => c.id = c.Cedula);
+        Consola IRepositorioConsolas.UpdateConsola(int IdConsola, Consola consola){
+            var consol = conexion.consolas.FirstOrDefault( c => c.Id == IdConsola);
             if(consol!=null){
+                consol.Nombre=consola.Nombre;
+                consol.Version=consola.Version;
+                consol.Fabricante=consola.Fabricante;
+                consol.Precio=consola.Precio;
+                consol.Costo=consola.Costo;
                 consol.CapacidadAlmacenamiento=consola.CapacidadAlmacenamiento;
                 consol.VelocidadRam=consola.VelocidadRam;
                 consol.VelocidadProcesamiento=consola.VelocidadProcesamiento;
@@ -35,15 +40,15 @@ namespace ExitoLogGames.App.Comandos
             return consol;
         }
 
-        void IrepositorioConsolas.DeleteConsola(int IdConsola){
-            var consol = conexion.consolas.FirstOrDefault( c => c.id == IdConsola);
+        void IRepositorioConsolas.DeleteConsola(int IdConsola){
+            var consol = conexion.consolas.FirstOrDefault( c => c.Id == IdConsola);
             if(consol!=null)
                 return;
             conexion.consolas.Remove(consol);
-            Console.WriteLines("Se elimino la consola correctamente");            
+            Console.WriteLine("Se elimino la consola correctamente");            
         }
 
-        Consola IrepositorioConsolas.GetConsola(int IdConsola){
+        Consola IRepositorioConsolas.GetConsola(int IdConsola){
             return conexion.consolas.FirstOrDefault( c => c.Id == IdConsola);
         }
 

@@ -10,7 +10,7 @@ namespace ExitoLogGames.App.Persistencia
     {
         IEnumerable<Consola> GetAllConsolas();
         Consola AddConsola(Consola consola);
-        Consola UpdateConsola(Consola consola);
+        Consola UpdateConsola(int IdConsola, Consola consola);
         void DeleteConsola(int IdConsola);
         Consola GetConsola(int IdConsola); 
     }
