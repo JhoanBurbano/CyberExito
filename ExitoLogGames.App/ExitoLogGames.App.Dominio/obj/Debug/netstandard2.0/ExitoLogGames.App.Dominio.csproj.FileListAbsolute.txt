@@ -16,3 +16,12 @@ C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGame
 C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.deps.json
 C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.dll
 C:\Users\jpabl\Documents\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.pdb
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.deps.json
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.dll
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\bin\Debug\netstandard2.0\ExitoLogGames.App.Dominio.pdb
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.csprojAssemblyReference.cache
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.AssemblyInfoInputs.cache
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.AssemblyInfo.cs
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.csproj.CoreCompileInputs.cache
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.dll
+C:\repositoriosGIT\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Dominio\obj\Debug\netstandard2.0\ExitoLogGames.App.Dominio.pdb
