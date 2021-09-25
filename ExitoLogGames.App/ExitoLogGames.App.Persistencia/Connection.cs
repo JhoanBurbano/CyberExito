@@ -11,7 +11,7 @@ namespace ExitoLogGames.App.Persistencia
         public DbSet<AdminVentas> administradores{get;set;}
         public DbSet<Sales> ventas{get;set;}
         public DbSet<Compras> compras{get;set;}
-        public DbSet<Pedidos> pedidos{get;set;}
+        public DbSet<Orders> orders{get;set;}
         public DbSet<Factura> facturas{get;set;}
         public DbSet<Consola> consolas{get;set;}
         public DbSet<Control> controles{get;set;}

@@ -3,12 +3,12 @@ using ExitoLogGames.App.Dominio;
 
 namespace ExitoLogGames.App.Persistencia
 {
-    public interface IRepositorioSALE
+    public interface IRepositorioVentas
     {
-        IEnumerable<Sales> GetAllSALE();
-        Sales AddSale(Sales sales);
-        Sales UpdateSale(int Id, Sales sales);
-        void DeleteSale(int Id);
-        Sales GetSale(int Id); 
+        IEnumerable<Sales> GetAllVentas();
+        Sales AddVenta(Sales ventas);
+        Sales UpdateVenta(int Id, Sales ventas);
+        void DeleteVenta(int Id);
+        Sales GetVenta(int Id); 
     }
 }

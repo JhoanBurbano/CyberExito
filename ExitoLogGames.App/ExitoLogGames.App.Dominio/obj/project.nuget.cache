@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ajWS/81wCaHh1Y/V8O8XjsbK+ooes0SyxPE2K6V4kHWYX6GE+6shYIPbK/Rpa0zhr6cehvnTajKxlyNnWJMYlw==",
+  "dgSpecHash": "tZmv9GpwNAHHdN7HE8SHcUUdn/MDXIVEwJswy7YBq4YmZXD+pj6OuyZPHL4ufzfCJOm8lCz0CO4aTzaDfDAHNw==",
   "success": true,
-  "projectFilePath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
+  "projectFilePath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ExitoApp\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
