@@ -5,7 +5,7 @@ namespace ExitoLogGames.App.Persistencia
 {
     public interface IRepositorioAdministradores
     {
-        IEnumerable<AdminVentas> GetAllAdministrador();
+        IEnumerable<AdminVentas> GetAllAdministradores();
         AdminVentas AddAdministrador(AdminVentas adminVentas);
         AdminVentas UpdateAdministrador(AdminVentas adminVentas);
         void DeleteAdministrador(int IdAdminVentas);

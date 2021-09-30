@@ -5,7 +5,7 @@ namespace ExitoLogGames.App.Persistencia
 {
     public interface IRepositorioCompradores
     {
-        IEnumerable<AdminCompras> GetAllComprador();
+        IEnumerable<AdminCompras> GetAllCompradores();
         AdminCompras AddComprador(AdminCompras admincompras);
         AdminCompras UpdateComprador(AdminCompras admincompras);
         void DeleteComprador(int IdAdminCompras);

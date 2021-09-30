@@ -19,7 +19,7 @@ namespace ExitoLogGames.App.Persistencia
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder){
             if(!builder.IsConfigured){
-                builder.UseSqlServer("Data source = (localdb)\\MSSQLLocalDB; Initial Catalog = ExitoLogGames.Data");
+                builder.UseSqlServer("Data source = (localdb)\\MSSQLLocalDB; Initial Catalog = ExitoGamesData");
             }
         }
 

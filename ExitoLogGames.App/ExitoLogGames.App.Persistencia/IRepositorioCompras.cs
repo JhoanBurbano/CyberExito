@@ -6,9 +6,9 @@ namespace ExitoLogGames.App.Persistencia
     public interface IRepositorioCompras
     {
         IEnumerable<Compras> GetAllCompras();
-        Compras AddCompras(Compras Compras);
-        Compras UpdateCompras(Compras Compras);
-        void DeleteCompras(int IdCompras);
-        Compras GetCompras(int IdCompras);
+        Compras AddCompra(Compras Compras);
+        Compras UpdateCompra(int IdCompra, Compras Compras);
+        void DeleteCompra(int IdCompras);
+        Compras GetCompra(int IdCompras);
     }
 }

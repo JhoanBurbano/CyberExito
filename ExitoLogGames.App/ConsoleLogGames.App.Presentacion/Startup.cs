@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using ExitoLogGames.App.Persistencia;
 
 namespace ConsoleLogGames.App.Presentacion
 {
@@ -24,6 +26,8 @@ namespace ConsoleLogGames.App.Presentacion
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<Connection>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

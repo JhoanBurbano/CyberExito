@@ -164,8 +164,10 @@ namespace ExitoLogGames.App.Persistencia.Migrations
 
             modelBuilder.Entity("ExitoLogGames.App.Dominio.Control", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Compatibilidad")
                         .HasColumnType("nvarchar(max)");
@@ -223,7 +225,7 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                     b.ToTable("facturas");
                 });
 
-            modelBuilder.Entity("ExitoLogGames.App.Dominio.Pedidos", b =>
+            modelBuilder.Entity("ExitoLogGames.App.Dominio.Orders", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -233,31 +235,30 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ConsolaId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ControlId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Operacion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SubTotal")
-                        .HasColumnType("int");
+                    b.Property<double>("SubTotal")
+                        .HasColumnType("float");
 
-                    b.Property<int?>("consolaId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("controlId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int?>("videojuegoId")
+                    b.Property<int?>("VideojuegoId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("consolaId");
+                    b.HasIndex("ConsolaId");
 
-                    b.HasIndex("controlId");
+                    b.HasIndex("ControlId");
 
-                    b.HasIndex("videojuegoId");
+                    b.HasIndex("VideojuegoId");
 
-                    b.ToTable("pedidos");
+                    b.ToTable("orders");
                 });
 
             modelBuilder.Entity("ExitoLogGames.App.Dominio.Sales", b =>
@@ -270,7 +271,7 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                     b.Property<int?>("FacturaId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaVenta")
+                    b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("VendedorId")
@@ -325,6 +326,9 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("Compatibilidad")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("Costo")
                         .HasColumnType("float");
 
@@ -338,9 +342,6 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Version")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("compatibilidad")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -380,15 +381,15 @@ namespace ExitoLogGames.App.Persistencia.Migrations
 
             modelBuilder.Entity("ExitoLogGames.App.Dominio.Factura", b =>
                 {
-                    b.HasOne("ExitoLogGames.App.Dominio.Pedidos", "PedidoConsolas")
+                    b.HasOne("ExitoLogGames.App.Dominio.Orders", "PedidoConsolas")
                         .WithMany()
                         .HasForeignKey("PedidoConsolasId");
 
-                    b.HasOne("ExitoLogGames.App.Dominio.Pedidos", "PedidoControles")
+                    b.HasOne("ExitoLogGames.App.Dominio.Orders", "PedidoControles")
                         .WithMany()
                         .HasForeignKey("PedidoControlesId");
 
-                    b.HasOne("ExitoLogGames.App.Dominio.Pedidos", "PedidoVideojuegos")
+                    b.HasOne("ExitoLogGames.App.Dominio.Orders", "PedidoVideojuegos")
                         .WithMany()
                         .HasForeignKey("PedidoVideojuegosId");
 
@@ -399,25 +400,25 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                     b.Navigation("PedidoVideojuegos");
                 });
 
-            modelBuilder.Entity("ExitoLogGames.App.Dominio.Pedidos", b =>
+            modelBuilder.Entity("ExitoLogGames.App.Dominio.Orders", b =>
                 {
-                    b.HasOne("ExitoLogGames.App.Dominio.Consola", "consola")
+                    b.HasOne("ExitoLogGames.App.Dominio.Consola", "Consola")
                         .WithMany()
-                        .HasForeignKey("consolaId");
+                        .HasForeignKey("ConsolaId");
 
-                    b.HasOne("ExitoLogGames.App.Dominio.Control", "control")
+                    b.HasOne("ExitoLogGames.App.Dominio.Control", "Control")
                         .WithMany()
-                        .HasForeignKey("controlId");
+                        .HasForeignKey("ControlId");
 
-                    b.HasOne("ExitoLogGames.App.Dominio.Videojuego", "videojuego")
+                    b.HasOne("ExitoLogGames.App.Dominio.Videojuego", "Videojuego")
                         .WithMany()
-                        .HasForeignKey("videojuegoId");
+                        .HasForeignKey("VideojuegoId");
 
-                    b.Navigation("consola");
+                    b.Navigation("Consola");
 
-                    b.Navigation("control");
+                    b.Navigation("Control");
 
-                    b.Navigation("videojuego");
+                    b.Navigation("Videojuego");
                 });
 
             modelBuilder.Entity("ExitoLogGames.App.Dominio.Sales", b =>

@@ -7,7 +7,7 @@ namespace ExitoLogGames.App.Persistencia
     {
         IEnumerable<Orders> GetAllOrders();
         Orders AddOrder(Orders Pedido);
-        Orders UpdateOrder(Orders Pedido);
+        Orders UpdateOrder(int IdPedido, Orders Pedido);
         void DeleteOrder(int IdPedido);
         Orders GetOrder(int IdPedido);
     }
