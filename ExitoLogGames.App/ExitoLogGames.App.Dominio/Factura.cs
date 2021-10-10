@@ -9,5 +9,6 @@ namespace ExitoLogGames.App.Dominio
         public Orders PedidoVideojuegos{get;set;}
         public DateTime Fecha{get;set;}
         public double Total{get;set;}
+        public bool Pagada{get; set;}
     }
 }
