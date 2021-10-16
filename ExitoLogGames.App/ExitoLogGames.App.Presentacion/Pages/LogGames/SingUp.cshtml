@@ -1,0 +1,54 @@
+@page
+@* @model ExitoLogGames.App.Presentacion.Pages.LogGames.Index *@
+
+@{
+
+
+    ViewData["Estilo"]="/css/singup.css";
+    ViewData["EstiloC"]="/css/login.css";
+    ViewData["Title"] = "Sing up";
+}
+
+    <div class="container">
+        <div class="formulario">
+            <div class="f_div">
+                <form name="singup" action="">
+                    <input type="text" placeholder=@ViewData["Tipo"]>
+                    <input type="text" placeholder="Apellido">
+                    <input type="text" placeholder="Identificacion">
+                    <input type="text" placeholder="Correo Electronico">
+                    <select id="select">
+                        <option disabled selected>Seleccione su cargo</option>
+                        <option value="AdminCompras">Administrador de Compras</option>
+                        <option value="AdminVentas">Administrador de Ventas</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select>
+                    <select id="select">
+                        <option disabled selected>Seleccione la sucursal</option>
+                        <option value="Vdll">Valle de Lili</option>
+                        <option value="SntDmg">Santo Domingo</option>
+                        <option value="Rsvlt">Roselvelt</option>
+                    </select>
+                    <label for="singup">*Digite su nombre de usuario</label>
+
+                </form>
+                <button type="submit" value="" for="singup">
+                    <input type="submit" for="singup">
+                    <div class="btn-svg-singup">
+                    </div>
+                </button>
+            </div>
+            <div class="img">
+                <button class="upload_img">
+                    <input type="file" name="img" for="login">
+                    <p class="txt">Sube tu imagen</p>
+                    <img src="~/img/user.svg" alt="">
+                </button>
+                <p class="name">Nombre De Usuario</p>
+            </div>
+            <div class="menu">
+                <a href="./login.html"><p class="txt_action">Iniciar Sesión</p></a>
+                <a href="./singup.html"><p class="txt_action active">Registrarse</p></a>
+            </div>
+        </div>
+    </div>

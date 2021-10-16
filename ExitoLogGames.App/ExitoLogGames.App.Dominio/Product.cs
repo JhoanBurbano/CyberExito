@@ -7,6 +7,5 @@ namespace ExitoLogGames.App.Dominio
         public string Fabricante { get; set;}
         public double Precio { get; set;}
         public double Costo { get; set;}
-        public string Tipo  {get; set;}
     }
 }

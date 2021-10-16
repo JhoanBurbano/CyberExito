@@ -34,3 +34,15 @@ D:\Sebas Burbano\Codigo\C#\Workspace\ExitoApp\CyberExito\ExitoLogGames.App\Exito
 D:\Sebas Burbano\Codigo\C#\Workspace\ExitoApp\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.csproj.CopyComplete
 D:\Sebas Burbano\Codigo\C#\Workspace\ExitoApp\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.dll
 D:\Sebas Burbano\Codigo\C#\Workspace\ExitoApp\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.pdb
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.csprojAssemblyReference.cache
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.AssemblyInfoInputs.cache
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.AssemblyInfo.cs
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.dll
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.pdb
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\bin\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.deps.json
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\bin\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.dll
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\bin\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.pdb
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\bin\Debug\netstandard2.1\ExitoLogGames.App.Dominio.dll
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\bin\Debug\netstandard2.1\ExitoLogGames.App.Dominio.pdb
+D:\Sebas Burbano\Codigo\C#\Workspace\ProyectoExito\CyberExito\ExitoLogGames.App\ExitoLogGames.App.Persistencia\obj\Debug\netstandard2.1\ExitoLogGames.App.Persistencia.csproj.CopyComplete

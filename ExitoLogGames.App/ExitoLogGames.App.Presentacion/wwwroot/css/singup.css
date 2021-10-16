@@ -1,0 +1,276 @@
+#Registro {
+    font-size: 30px;
+}
+
+nav {
+    width:70%;
+}
+nav ul {
+    justify-content:center;
+}
+
+nav ul li.hidden{
+    display: none;
+}
+
+nav ul li#Rol a{
+    font-size: 30px;
+}
+
+nav ul li i {
+    margin: 0 40px;
+}
+
+nav ul li i svg {
+    width: 45px;
+}
+
+nav ul li:hover {
+    border: none;
+}
+
+nav ul li a {
+    cursor: default;
+}
+
+nav ul li:hover a, nav ul li:hover i svg .cls-1{
+    color: var(--white);
+    fill: var(--white);
+    cursor: default;
+}
+
+/*-------------------------------------------------------------------------*/
+.container {
+    min-height: 70vh;
+    height: 100vh;
+}
+.container .formulario{
+    width: 40%;
+    height: 90%;
+    overflow: hidden;
+    /* background-color:var(#eee2); */
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items:center ;
+    justify-content: space-around;
+    padding: 0 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 60px #ccc;
+}
+
+.container .formulario .img {
+    display: block;
+    text-align: center;
+    height: 40%;
+    border-radius: 70%;
+    padding: 5px 0;
+}
+.container .formulario .img .upload_img {
+    text-align: center;
+    height: 80%;
+    border-radius: 70%;
+    appearance: none;
+    outline: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.img [type="file"]{
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    /* padding: 50% 0; */
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+
+
+.txt{
+    margin: 0!important;
+    padding: 48% 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    text-align:center;
+    color:var(--white);
+    font-family: var(--f-bold);
+    font-size: 18px;
+    z-index: 100;
+}
+
+.upload_img:hover .txt{
+    opacity: 1;
+    background-color: #0006;
+}
+
+.container .formulario .img .upload_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.container .formulario .img p{
+    margin: 20px 0;
+}
+
+.name{
+    font-family: var(--f-bold);
+    font-size: 20px;
+}
+
+.formulario .f_div {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario .f_div button[type="submit"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border: none;
+    overflow: hidden;
+    background: var(--white);
+    position:relative;
+}
+
+button input[type="submit"]{
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    opacity: 0;
+}
+
+.container .formulario form{
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form [placeholder="Usuario"], form [placeholder="Contraseña"], form *, form #select{
+    border-style: none;
+    width: 250px;
+    border-bottom: 2px solid var(--morado);
+    line-height: 250%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button .btn-svg-singup {
+    background-color: var(--green);
+    width: 100px;
+    height: 100px;
+    border-radius:20px;
+    position: relative;
+}
+
+.btn-svg-singup::before {
+    content: '';
+    width: 80px;
+    height: 8px;
+    z-index: 1000;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: 17px;
+    top: 48%;
+    transform: rotate(-50deg);
+}
+
+.btn-svg-singup::after {
+    content: '';
+    width: 40px;
+    height: 8px;
+    background-color: var(--white);
+    top:57%;
+    left:5%;
+    position: absolute;
+    z-index: 2000;
+    border-radius: 5px;
+    transform: rotate(70deg);
+}
+
+.btn-svg-singup span{
+    content: '';
+    width: 20px;
+    height: 5px;
+    background-color: var(--white);
+    left:40%;
+    position: absolute;
+    z-index: 2001;
+    border-radius: 5px;
+}
+
+.f_div button input[type="singup"]{
+    display: none;
+}
+
+form input {
+    padding:0 5px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.formulario a{
+    color: var(--morado);
+}
+
+form label {
+    font-size: 12px;
+}
+
+form #select {
+    outline: none;
+    height: 100px;
+    appearance: none;
+    position: relative;
+}
+
+form #select::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--morado);
+    z-index: 20000;
+}
+
+.formulario .txt_action{
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+
+.formulario .txt_action.active{
+    border-bottom: 2px solid var(--morado);
+}
+.formulario .menu{
+    justify-content: center
+}
+
+.formulario .menu a{
+    margin: 0 10px 0 0;
+}

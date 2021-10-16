@@ -16,19 +16,31 @@ namespace ExitoLogGames.App.Persistencia
         private IRepositorioOrders rorders = new RepositorioOrders(new Connection());
         private IRepositorioFactura rfactura = new RepositorioFactura(new Connection());
 
-        //Funcion para verificar los tipos de producto que hay.
-        public void botonCrear(Product producto){
-            switch(producto.Tipo){
-                case "Videojuego" : 
-                     rvideojuego.AddVideojuego(producto);
-                    break;
-                case "Control":
-                    rcontrol.AddContron(producto);
-                    break;
-                case "Consola":
-                    rconsola.AddConsola(producto);
-                    break;
+        // Funcion para verificar los tipos de producto que hay.
+        // public void botonCrear(Control Control, Consola consola, Videojuego videojuego){
+        //     switch(producto.Tipo){
+        //         case "Videojuego" : 
+        //              rvideojuego.AddVideojuego(producto);
+        //             break;
+        //         case "Control":
+        //             rcontrol.AddContron(producto);
+        //             break;
+        //         case "Consola":
+        //             rconsola.AddConsola(producto);
+        //             break;
+        //     }
+        // }
+
+        public void btnCrearCtr(Control ctr){
+            Control ct = conexion.controles.FirstOrDefault(c => c.Nombre == ctr.Nombre);
+            if(ct == null){
+                rcontrol.AddControl(ctr);
+            }else{
+                rcontrol.UpdateControl(ct.Id, ctr);
             }
         }
+
+
     }
+    
 }

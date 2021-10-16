@@ -148,9 +148,6 @@ namespace ExitoLogGames.App.Persistencia.Migrations
                     b.Property<string>("Storage")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Tipo")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("VelocidadProcesamiento")
                         .HasColumnType("nvarchar(max)");
 
@@ -186,9 +183,6 @@ namespace ExitoLogGames.App.Persistencia.Migrations
 
                     b.Property<double>("Precio")
                         .HasColumnType("float");
-
-                    b.Property<string>("Tipo")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Version")
                         .HasColumnType("nvarchar(max)");
@@ -349,9 +343,6 @@ namespace ExitoLogGames.App.Persistencia.Migrations
 
                     b.Property<double>("Precio")
                         .HasColumnType("float");
-
-                    b.Property<string>("Tipo")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Version")
                         .HasColumnType("nvarchar(max)");
