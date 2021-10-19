@@ -32,12 +32,46 @@ namespace ExitoLogGames.App.Persistencia
         // }
 
         public void btnCrearCtr(Control ctr){
-            Control ct = conexion.controles.FirstOrDefault(c => c.Nombre == ctr.Nombre);
-            if(ct == null){
+            Control cont = conexion.controles.FirstOrDefault(c => c.Nombre == ctr.Nombre);
+            if(cont == null){
                 rcontrol.AddControl(ctr);
             }else{
-                rcontrol.UpdateControl(ct.Id, ctr);
+
+                cont.Nombre=cont.Nombre;
+                cont.Version=cont.Version;
+                cont.Fabricante=cont.Fabricante;
+                cont.Precio=cont.Precio;
+                cont.Costo=cont.Costo;
+                cont.Compatibilidad=cont.Compatibilidad;
+                cont.Cantidad+=ctr.Cantidad;
+                rcontrol.UpdateControl(cont.Id, cont);
+            
             }
+            //Hasta aqui se valida si existe un producto igual o si es nuevo
+            Orders ord = new Orders();
+            rcompras.AddCompra(ord);
+            ord = conexion.compras.FirstOrDefault(o => (o.Cantidad == null));
+            ord.Producto = ctr;
+            ord.Consola = null;
+            ord.Videojuego = null;
+            ord.Cantidad = ctr.Cantidad;
+            ord.Operacion = "compra";
+            ord.SubTotal = ctr.Costo*ctr.Cantidad;
+            Orders od = rcompras.UpdateCompras(ord.Id, ord);
+            
+
+            Factura fact = new Factura();
+            rfactura.AddFactura(fact);
+            fact=conexion.facturas.FirstOrDefault(f => f.Fecha == null);
+            fact.PedidoControles=od;
+            fact.Fecha = DateTime.Now();
+            fact.Total = od.SubTotal;
+            fact.Pagada = true;
+            Factura fc = rfactura.UpdateFactura(fact.Id, fact);
+            
+            
+
+
         }
 
 

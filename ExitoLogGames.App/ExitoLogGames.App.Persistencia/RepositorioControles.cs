@@ -32,6 +32,7 @@ namespace ExitoLogGames.App.Persistencia
                 cont.Precio=control.Precio;
                 cont.Costo=control.Costo;
                 cont.Compatibilidad=control.Compatibilidad;
+                cont.Cantidad=control.Cantidad;
             }
             conexion.SaveChanges();
             return cont;
