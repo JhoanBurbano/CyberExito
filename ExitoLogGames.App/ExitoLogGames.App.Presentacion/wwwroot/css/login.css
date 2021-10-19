@@ -1,6 +1,6 @@
-header{
-    z-index: 10000000;
-}
+/* header{
+    z-index: 10000;
+} */
 nav {
     width:70%;
 }
@@ -24,30 +24,30 @@ nav ul li i svg {
     width: 45px;
 }
 
-nav ul li:hover {
+/* nav ul li:hover {
     border: none;
-}
+} */
 
 nav ul li a {
-    cursor: default;
+    cursor: pointer;
 }
 
 nav ul li:hover a, nav ul li:hover i svg .cls-1{
     color: var(--white);
     fill: var(--white);
-    cursor: default;
+    cursor: pointer;
 }
 
 /*-------------------------------------------------------------------------*/
 .container{
     min-height:70vh;
-    height:80vh;    
+    height:70vh;    
 
 
 }
 .container .formulario{
     width: 40%;
-    height: 90%;
+    height: 85%;
     overflow: hidden;
     /* background-color:var(#eee2); */
     display: flex;
@@ -56,8 +56,9 @@ nav ul li:hover a, nav ul li:hover i svg .cls-1{
     justify-content: space-around;
     padding: 10px 50px;
     border-radius: 20px;
-    box-shadow: 0 0 60px #ccc;
+    box-shadow: 0 0 60px #999;
     margin: 20px 0;
+    /* z-index: -1; */
 }
 
 .formulario .txt_action{

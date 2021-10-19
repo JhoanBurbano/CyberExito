@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lB4+KoQsehvbLc7Rh6Qgc49y4SrUi0yHtvKYPzaJlTrN2CSnIgQDBKQUaUevTCSlbozi5BnP8iUzVuCcJ2e0KA==",
+  "dgSpecHash": "osJQqTC8F0JlRv3dZ4xCfR9/unjjVUvKxtwHIRMs2rfnS+QEA1F0yLHnbqEjeenmnSCtRNAx2/ronOOuUxjEGA==",
   "success": true,
-  "projectFilePath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
+  "projectFilePath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,71 @@
+@page
+@model ListaDeConsolasModel
+
+@{
+    ViewData["Title"] = "Consolas";
+    ViewData["EstiloB"] = "/css/singup.css";
+    @*ViewData["EstiloD"] = "/css/forget-password.css";*@
+    ViewData["Estilo"] = "/css/ListaDeConsolas.css";
+}
+
+<div class="container">
+    <div class="formulario">
+        <div class="t_div">
+
+            @if (Model.Consolas.Count() > 0)
+            {
+                @foreach (var consola in Model.Consolas)
+                {
+                    <div class="card">
+                        <div class="desc">
+                            @switch (consola.Nombre)
+                            {
+                                case "XBOX":
+                                    <h3>XBOX One</h3>
+                                    break;
+                                case "NINTENDO":
+                                    <h3>NINTENDO Wii</h3>
+                                    break;
+                                case "PLAYSTATION":
+                                    <h3>PlayStation 5</h3>
+                                    break;
+                            }
+                            
+                            
+                            <p>@Html.DisplayFor(k=>consola.Version)</p>
+                            <p>@Html.DisplayFor(k=>consola.CantidadControles) controles</p>
+                            <p>USD &nbsp;<b>$@Html.DisplayFor(k=>consola.Precio)</b></p>
+                            <a asp-page="/LogGames/Detalles" asp-route-id="@consola.Id" class="btn">Detalles</a>
+                            <a asp-page="/LogGames/EditarProducto" asp-route-id="@consola.Id" class="btn">Update</a>
+                            <a asp-page="/LogGames/Delete" asp-route-id="@consola.Id" class="btn">Delete</a>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p id="dsc"><b>No Hay Consolas para mostrar.</b></p>
+            }
+
+        </div>
+        <div class="warning">
+            <p class="tit"><b>Lista de Consolas </b></p>
+            <p class="tit_txt">Recueda llenar <b>todos los campos</b> para evitar problemas y confusiones futuras.
+                <b>¡Gracias!</b>.
+            </p>
+            <br />
+            <a asp-page="/LogGames/CrearConsola" id="btnCrear">Crear Consola</a>
+        </div>
+        <div class="menu">
+            <a href="./first-login.html">
+                <p class="txt_action active">Lista de Consolas</p>
+            </a>
+            <a href="./first-login.html">
+                <p class="txt_action">Lista de Controles</p>
+            </a>
+            <a href="./first-login.html">
+                <p class="txt_action">Lista de Videojuegos</p>
+            </a>
+        </div>
+    </div>
+</div>

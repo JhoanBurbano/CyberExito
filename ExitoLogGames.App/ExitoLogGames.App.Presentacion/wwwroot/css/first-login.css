@@ -58,7 +58,7 @@ nav ul li:hover a, nav ul li:hover i svg .cls-1{
     justify-content: space-around;
     padding: 0 50px;
     border-radius: 20px;
-    box-shadow: 0 0 60px #ccc;
+    box-shadow: 0 0 60px #999;
 }
 
 form label {

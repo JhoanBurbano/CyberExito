@@ -1,0 +1,208 @@
+@page
+@model RegistrarVentaModel
+
+@{
+    ViewData["Title"] = "Crear Consola";
+    ViewData["EstiloB"] = "/css/singup.css";
+    ViewData["EstiloD"] = "/css/forget-password.css";
+    ViewData["Estilo"] = "/css/CrearConsola.css";
+}
+
+<div class="container">
+    <div class="formulario">
+        <div class="f_div">
+            <form name="cConsola" id="cConsola" method="POST">
+                <div>
+                    <select id="select" asp-for="Venta.empleado" required>
+                        <option disabled selected>Seleccione el Empleado</option>
+                        @foreach (var empleado in Model.Empleados)
+                        {
+                            <option value="@empleado.Id">@empleado.Nombre @empleado.Apellido</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Venta.empleado"></span>
+                </div>
+                @if (Model.Consolas.Count() > 0)
+                {
+                    <div>
+                        <select id="select" asp-for="Venta.PedidoConsolas" required>
+                            <option disabled selected>Seleccione el Tipo de Consola</option>
+                            @foreach (var consola in Model.Consolas)
+                            {
+                                <option value="@consola.Id">@consola.Nombre + @consola.CantidadControles Controles</option>
+                            }
+                        </select>
+                        <span asp-validation-for="Venta.PedidoConsolas"></span>
+                    </div>
+                    <div>
+                        <input type="number" asp-for="Venta.CantidadConsolas" min="0" />
+                        <span asp-validation-for="Venta.CantidadConsolas"></span>
+                    </div>
+                }
+                @if (Model.Controles.Count() > 0)
+                {
+                    <div>
+                        <select id="select" asp-for="Venta.PedidoControles" required>
+                            <option disabled selected>Seleccione el tipo de Control</option>
+                            @foreach (var control in Model.Controles)
+                            {
+                                <option value="@control.Id">@control.Nombre para @control.Compatibilidad </option>
+                            }
+                        </select>
+                        <span asp-validation-for="Venta.PedidoControles"></span>
+                    </div>
+                    <div>
+                        <input type="number" asp-for="Venta.CantidadControles" min="0" />
+                        <span asp-validation-for="Venta.CantidadControles"></span>
+                    </div>
+                }
+                @if (Model.Videojuegos.Count() > 0)
+                {
+                    <div>
+                        <select id="select" asp-for="Venta.PedidoControles" required>
+                            <option disabled selected>Seleccione el tipo de Videojuego</option>
+                            @foreach (var videojuego in Model.Videojuegos)
+                            {
+
+                                <option value="@videojuego.Id">@videojuego.Nombre para @videojuego.Compatibilidad Controles
+                                </option>
+                            }
+                        </select>
+                        <span asp-validation-for="Venta.PedidoControles"></span>
+                    </div>
+                    <div>
+                        <input type="number" asp-for="Venta.CantidadControles" min="0" />
+                        <span asp-validation-for="Venta.CantidadControles"></span>
+                    </div>
+                }
+
+                <div>
+                    <input type="Date" placeholder="Precio de Venta Unitario" asp-for="Venta.Fecha" id="fecha" readonly
+                        value="" autocomplete>
+                    <span asp-validation-for="Venta.Fecha"></span>
+                </div>
+                <div>
+                    <input type="number" placeholder="Total" asp-for="Venta.Total" id="Total" readonly
+                        value="" onkeyup="calcular()" autocomplete>
+                    <span asp-validation-for="Venta.Fecha"></span>
+                </div>
+
+
+                @* <div>
+                    <select id="select" asp-for="Consola.Version" required>
+                    <option disabled selected>Seleccione la Version</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    </select>
+                    <span asp-validation-for="Consola.Version"></span>
+                    </div>
+                    <div>
+                    <select id="select" asp-for="Consola.Fabricante" required>
+                    <option disabled selected>Seleccione el Fabricante</option>
+                    <option value="Microsoft">Microsoft XBOX</option>
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="Sony">Sony PlayStation</option>
+                    </select>
+                    <span asp-validation-for="Consola.Fabricante"></span>
+                    </div>
+                    <div>
+                    <select id="select" asp-for="Consola.CapacidadAlmacenamiento" required>
+                    <option disabled selected>Seleccione la Capacidad de Almacenamiento</option>
+                    <option value="1TB">1 Terabyte</option>
+                    <option value="1.5TB">2,5 Terabytes</option>
+                    <option value="2TB">3 Terabytes</option>
+                    </select>
+                    <span asp-validation-for="Consola.CapacidadAlmacenamiento"></span>
+                    </div>
+                    <div>
+                    <select id="select" asp-for="Consola.Storage" required>
+                    <option disabled selected>Seleccione el tipo de Disco Duro</option>
+                    <option value="HDD">HDD</option>
+                    <option value="SSD">SSD</option>
+                    <option value="Ambos">HDD & SSD</option>
+                    </select>
+                    <span asp-validation-for="Consola.Storage"></span>
+                    </div>
+                    <div>
+                    <select id="select" asp-for="Consola.VelocidadProcesamiento" required>
+                    <option disabled selected>Seleccione la Velocidad de Procesamiento</option>
+                    <option value="1.66GHz">1,66 GigaHercios</option>
+                    <option value="2GHz">2 GigaHercios</option>
+                    <option value="2.23GHz">2,23 GigaHercios</option>
+                    </select>
+                    <span asp-validation-for="Consola.VelocidadProcesamiento"></span>
+                    </div>
+                    <div>
+                    <select id="select" asp-for="Consola.VelocidadRam" required>
+                    <option disabled selected>Seleccione la Velocidad de Ram</option>
+                    <option value="1866MHz">1866 MegaHercios</option>
+                    <option value="1600MHz">1600 MegaHercios</option>
+                    <option value="1333MHz">1333 MegaHercios</option>
+                    </select>
+                    <span asp-validation-for="Consola.VelocidadRam"></span>
+                    </div>
+                    <div>
+                    <input type="number" placeholder="Cantidad de controles" asp-for="Consola.CantidadControles"
+                    id="ctr">
+                    <span asp-validation-for="Consola.CantidadControles"></span>
+                    </div>
+                    <div>
+                    <input type="number" placeholder="Cantidad del producto" asp-for="Consola.Cantidad">
+                    <span asp-validation-for="Consola.Cantidad"></span>
+                    </div>
+                    <div>
+                    <input type="number" placeholder="Precio de Compra Unitario" asp-for="Consola.Costo" id="costo"
+                    onkeyup="calcular()">
+                    <span asp-validation-for="Consola.Costo"></span>
+                    </div>
+                    <div>
+                    <input type="number" placeholder="Precio de Venta Unitario" asp-for="Consola.Precio" id="precio"
+                    readonly>
+                    <span asp-validation-for="Consola.Precio"></span>
+                    </div> *@
+                <button type="submit" id="btnCrear">Registrar Venta</button>
+            </form>
+        </div>
+        <div class="warning">
+            <img src="~/img/GCircle.svg" alt="">
+            <p class="tit"><b>Registra una Venta </b></p>
+            <p class="tit_txt"><br>Recueda llenar <b>todos los campos</b> para evitar problemas y confusiones futuras.
+                <b>¡Gracias!</b>.
+                <br><br><a asp-page="/LogGames/ListaDeVentas" id="btnCrear">Volver a la Lista de Ventas</a>
+            </p>
+        </div>
+        <div class="menu">
+            <a href="">
+                <p class="txt_action active">Registro de Venta</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+@* <partial name="_ValidationScriptsPartial" /> *@
+
+
+<script>
+
+    let fecha = document.getElementById("fecha")
+    fecha.value='' + (@DateTime.Now).ToString()
+    
+
+
+
+    console.log(ide)
+
+
+    function calcular() {
+        let total = document.getElementById("Total");
+        let ctr = document.getElementById("ctr")
+        let precio = document.getElementById("precio");
+        if (typeof costo.value) {
+            precio.value = 300 + (parseInt(costo.value) + parseInt(costo.value) * 0.6) + (parseInt(ctr.value) * 10)
+        }
+    }
+</script>
+}

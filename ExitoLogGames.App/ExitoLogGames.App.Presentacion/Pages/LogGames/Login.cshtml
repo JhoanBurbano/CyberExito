@@ -1,0 +1,49 @@
+@page
+@model LoginModel
+
+@{
+
+
+    ViewData["Estilo"] = "/css/login.css";
+
+    ViewData["Title"] = "Iniciar Sesion";
+}
+
+<div class="container">
+    <div class="formulario">
+        <a asp-page="/LogGames/ForgetPassword">¿Olvidó su contraseña?</a>
+        <div>
+            <form id="login" name="login" method="POST" >
+                <input type="text" placeholder="Usuario" asp-for="Empleado.Usuario"/>
+                <input type="password" placeholder="Contraseña" asp-for="Empleado.Password"/>
+                <label for="login">*Digite su nombre de usuario</label>
+                <button id="enviar" type="submit" style="display:none;">
+
+            </form>
+            <button type="submit" value="" form="login">
+                <div class="btn-svg" id="OnClick_" OnClick="ByeBye">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input type="submit" for="login">
+                </div>
+            </button>
+        </div>
+        <p class="name">Nombre De Usuario</p>
+        <img src="~/img/user.svg" alt="">
+        <div class="menu">
+            <a href="./login.html">
+                <p class="txt_action active">Iniciar Sesión</p>
+            </a>
+            <a href="/LogGames/Singup">
+                <p class="txt_action">Registrarse</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <partial name = "_ValidationScriptsPartial"/>
+
+}

@@ -7,9 +7,14 @@
     <title>@ViewData["Title"]</title>
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" /> *@
-    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/estilos.css" />
+    <link rel="stylesheet" href=@ViewData["EstiloA"] />
+    <link rel="stylesheet" href=@ViewData["EstiloB"] />
     <link rel="stylesheet" href=@ViewData["EstiloC"] />
+    <link rel="stylesheet" href=@ViewData["EstiloD"] />
     <link rel="stylesheet" href=@ViewData["Estilo"] />
+    <link rel="stylesheet" href="/css/SequelSans/SequelSans.css">
+    <link rel="shortcut icon" href="/img/LogoExito.svg">
 </head>
 
 <body>
@@ -113,7 +118,7 @@
                                     <circle class="cls-1" cx="25.89" cy="21.73" r="2.79" />
                                 </g>
                             </g>
-                        </svg></i><a asp-area="" asp-page="/LogGames/AdminCompras">Administrador de compras</a></li>
+                        </svg></i><a asp-area="" asp-page="/LogGames/Login">Administrador de compras</a></li>
                 <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.64 30.79">
                             <defs></defs>
                             <g id="Capa_2" data-name="Capa 2">
@@ -124,7 +129,7 @@
                                     <rect class="cls-1" x="8.05" y="11.68" width="3.64" height="0.99" />
                                 </g>
                             </g>
-                        </svg></i> <a asp-area="" asp-page="/LogGames/AdminVentas">Administrador de Ventas</a></li>
+                        </svg></i> <a asp-area="" asp-page="/LogGames/Login">Administrador de Ventas</a></li>
                 <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.44 30.17">
                             <defs></defs>
                             <g id="Capa_2" data-name="Capa 2">
@@ -133,7 +138,7 @@
                                         d="M0,0V30.17H22.44V0ZM10.09,26.79H3.85V20.55h6.24Zm0-8.53H3.85V12h6.24Zm8.5,8.53H12.35V20.55h6.24Zm0-8.53H12.35V12h6.24Zm0-8.91H3.85V3.45H18.59Z" />
                                 </g>
                             </g>
-                        </svg></i><a asp-area="" asp-page="/LogGames/Vendedor">Vendedor</a></li>
+                        </svg></i><a asp-area="" asp-page="/LogGames/Login">Vendedor</a></li>
             </ul>
         </nav>
     </header>

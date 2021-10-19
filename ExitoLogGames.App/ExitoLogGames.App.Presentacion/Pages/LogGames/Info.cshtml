@@ -1,0 +1,31 @@
+@page
+@model InfoModel
+
+@{
+    ViewData["Title"] = "Revisa tu correo";
+    ViewData["EstiloA"] = "/css/login.css";
+    ViewData["EstiloB"] = "/css/singup.css";
+    ViewData["EstiloC"] = "/css/first-login.css";
+    ViewData["EstiloD"] = "/css/forget-password.css";
+    ViewData["Estilo"] = "/css/info.css";
+}
+
+
+<div class="container">
+    <div class="formulario">
+        <div class="f_div">
+            <p>Tienes un plazo de 24 horas para entrar al link, sino este caducará. </p>
+        </div>
+        <div class="warning">
+            <img src="~/img/warning.svg" alt="">
+            <p class="tit"><b>Hola </b></p>
+            <p class="tit_txt">Revisa tu <b>correo electronico</b>  recuperar su contraseña.
+            </p>
+        </div>
+        <div class="menu">
+            <a href="">
+                <p class="txt_action active">¡Revisa Tu Correo!</p>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+@page
+@model ListaDeVentasModel
+
+@{
+    ViewData["Title"] = "Ventas";
+    ViewData["EstiloB"] = "/css/singup.css";
+    @*ViewData["EstiloD"] = "/css/forget-password.css";*@
+    ViewData["Estilo"] = "/css/ListaDeConsolas.css";
+}
+
+<div class="container">
+    <div class="formulario">
+        <div class="t_div">
+
+            @if (Model.Ventas.Count() > 0)
+            {
+                @foreach (var venta in Model.Ventas)
+                {
+                        <div class="card">
+                            <div class="desc">
+                                <h3>Factura Nro @Html.DisplayFor(x=>venta.Id)</h3>
+                                <p>@Html.DisplayFor(k=>venta.empleado)</p>
+                                @if(venta.PedidoControles!=null){
+                                    <p>@Html.DisplayFor(k=>venta.PedidoControles)</p>
+                                    <p>@Html.DisplayFor(k=>venta.CantidadControles)</p>
+                                }
+                                @if(venta.PedidoConsolas!=null){
+                                    <p>@Html.DisplayFor(k=>venta.PedidoConsolas)</p>
+                                    <p>@Html.DisplayFor(k=>venta.CantidadConsolas)</p>
+                                }
+                                @if(venta.PedidoVideojuegos!=null){
+                                    <p>@Html.DisplayFor(k=>venta.PedidoVideojuegos)</p>
+                                    <p>@Html.DisplayFor(k=>venta.CantidadVideojuegos)</p>
+                                }
+                                <p>&nbsp;<b>@Html.DisplayFor(k=>venta.Fecha)</b></p>
+                                <p>&nbsp;<b>@Html.DisplayFor(k=>venta.Total)</b></p>
+                                @if(venta.Pagada==true){
+                                <p><b>PAGADA</b></p>
+                                }else{
+                                <p><b>PENDIENTE</b></p>
+                                }
+                                <a asp-page="/LogGames/Detalles" asp-route-id="@venta.Id" class="btn">Detalles</a>
+                                <a asp-page="/LogGames/EditarProducto" asp-route-id="@venta.Id" class="btn">Update</a>
+                                <a asp-page="/LogGames/Delete" asp-route-id="@venta.Id" class="btn">Delete</a>
+                            </div>
+                        </div>
+                }
+            }
+            else
+            {
+                <p id="dsc"><b>No Hay Ventas para mostrar</b></p>
+            }
+
+        </div>
+        <div class="warning">
+            <p class="tit"><b>Lista de Ventas </b></p>
+            <p class="tit_txt">Recueda llenar <b>todos los campos</b> para evitar problemas y confusiones futuras.
+                <b>¡Gracias!</b>.
+            </p>
+            <br />
+            <a asp-page="/LogGames/RegistrarVenta" id="btnCrear">Registrar Venta</a>
+        </div>
+        <div class="menu">
+            <a href="./first-login.html">
+                <p class="txt_action active">Lista de Ventas</p>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,138 @@
+@page
+@model EditarModel
+
+@{
+    ViewData["Title"] = "Editar Consola";
+    ViewData["EstiloB"] = "/css/singup.css";
+    ViewData["EstiloD"] = "/css/forget-password.css";
+    ViewData["Estilo"] = "/css/CrearConsola.css";
+}
+
+<div class="container">
+    <div class="formulario">
+        <div class="f_div">
+            <form name="cConsola" id="cConsola" method="POST">
+                <input type="hidden" asp-for="Consola.Id"/>
+                <div>
+                    <select id="select" asp-for="Consola.Nombre" value="@Model.Consola.Nombre"required>
+                        <option disabled selected>Seleccione el Tipo</option>
+                        <option value="XBOX">XBOX ONE</option>
+                        <option value="NINTENDO">NINTENDO Wii</option>
+                        <option value="PLAYSTATION">PlayStation 5</option>
+                    </select>
+                    <span asp-validation-for="Consola.Nombre"></span>
+                </div>
+                <div>
+                    <select id="select" asp-for="Consola.Version" value="@Model.Consola.Version"required>
+                        <option disabled selected>Seleccione la Version</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    <span asp-validation-for="Consola.Version"></span>
+                </div>
+                <div>
+                    <select id="select" asp-for="Consola.Fabricante" value="@Model.Consola.Fabricante"required>
+                        <option disabled selected>Seleccione el Fabricante</option>
+                        <option value="Microsoft">Microsoft XBOX</option>
+                        <option value="Nintendo">Nintendo</option>
+                        <option value="Sony">Sony PlayStation</option>
+                    </select>
+                    <span asp-validation-for="Consola.Fabricante"></span>
+                </div>
+                <div>
+                    <select id="select" asp-for="Consola.CapacidadAlmacenamiento" value="@Model.Consola.CapacidadAlmacenamiento"required>
+                        <option disabled selected>Seleccione la Capacidad de Almacenamiento</option>
+                        <option value="1TB">1 Terabyte</option>
+                        <option value="1.5TB">2,5 Terabytes</option>
+                        <option value="2TB">3 Terabytes</option>
+                    </select>
+                    <span asp-validation-for="Consola.CapacidadAlmacenamiento"></span>
+                </div>
+                <div>
+                    <select id="select" asp-for="Consola.Storage" value="@Model.Consola.Storage"required>
+                        <option disabled selected>Seleccione el tipo de Disco Duro</option>
+                        <option value="HDD">HDD</option>
+                        <option value="SSD">SSD</option>
+                        <option value="Ambos">HDD & SSD</option>
+                    </select>
+                    <span asp-validation-for="Consola.Storage"></span>
+                </div>
+                <div>
+                    <select id="select" asp-for="Consola.VelocidadProcesamiento" value="@Model.Consola.VelocidadProcesamiento"required>
+                        <option disabled selected>Seleccione la Velocidad de Procesamiento</option>
+                        <option value="1.66GHz">1,66 GigaHercios</option>
+                        <option value="2GHz">2 GigaHercios</option>
+                        <option value="2.23GHz">2,23 GigaHercios</option>
+                    </select>
+                    <span asp-validation-for="Consola.VelocidadProcesamiento"></span>
+                </div>
+                <div>
+                    <select id="select" asp-for="Consola.VelocidadRam" value="@Model.Consola.VelocidadRam"required>
+                        <option disabled selected>Seleccione la Velocidad de Ram</option>
+                        <option value="1866MHz">1866 MegaHercios</option>
+                        <option value="1600MHz">1600 MegaHercios</option>
+                        <option value="1333MHz">1333 MegaHercios</option>
+                    </select>
+                    <span asp-validation-for="Consola.VelocidadRam"></span>
+                </div>
+                <div>
+                    <input type="number" placeholder="Cantidad de controles" asp-for="Consola.CantidadControles"
+                        id="ctr" value="@Model.Consola.CantidadControles">
+                    <span asp-validation-for="Consola.CantidadControles"></span>
+                </div>
+                <div>
+                    <input type="number" placeholder="Cantidad del producto" asp-for="Consola.Cantidad" value="@Model.Consola.Cantidad">
+                    <span asp-validation-for="Consola.Cantidad"></span>
+                </div>
+                <div>
+                    <input type="number" placeholder="Precio de Compra Unitario" asp-for="Consola.Costo" id="costo" onkeyup="calcular()" value="@Model.Consola.Costo">
+                    <span asp-validation-for="Consola.Costo"></span>
+                </div>
+                <div>
+                    <input type="number" placeholder="Precio de Venta Unitario" asp-for="Consola.Precio" id="precio"
+                        readonly value="@Model.Consola.Precio">
+                    <span asp-validation-for="Consola.Precio"></span>
+                </div>
+                <button type="submit" id="btnCrear">Actualizar Consola </button>
+            </form>
+        </div>
+        <div class="warning">
+            <img src="~/img/GCircle.svg" alt="">
+            <p class="tit"><b>Crear una Consola </b></p>
+            <p class="tit_txt"><br>Recueda llenar <b>todos los campos</b> para evitar problemas y confusiones futuras.
+                <b>¡Gracias!</b>.
+                <br><br><a asp-page="/LogGames/ListaDeConsolas" id="btnCrear">Volver a la Lista de Consolas</a>
+            </p>
+        </div>
+        <div class="menu">
+            <a href="">
+                <p class="txt_action active">Consola</p>
+            </a>
+            <a href="">
+                <p class="txt_action">Control</p>
+            </a>
+            <a href="">
+                <p class="txt_action">Videojuego</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+@* <partial name="_ValidationScriptsPartial" /> *@
+<script>
+
+    function calcular() {
+            let costo = document.getElementById("costo");
+            let ctr = document.getElementById("ctr")
+            let precio = document.getElementById("precio");
+        if (typeof costo.value) {
+            precio.value = 300 + (parseInt(costo.value)+parseInt(costo.value)*0.6) + (parseInt(ctr.value) * 10)
+        }
+    }
+
+
+</script>
+}

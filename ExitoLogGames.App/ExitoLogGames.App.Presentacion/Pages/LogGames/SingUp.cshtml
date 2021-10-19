@@ -1,54 +1,91 @@
 @page
-@* @model ExitoLogGames.App.Presentacion.Pages.LogGames.Index *@
+@model SingUpModel
 
 @{
-
-
-    ViewData["Estilo"]="/css/singup.css";
-    ViewData["EstiloC"]="/css/login.css";
-    ViewData["Title"] = "Sing up";
+    ViewData["Estilo"] = "/css/singup.css";
+    @* ViewData["EstiloC"] = "/css/login.css"; *@
+    ViewData["Title"] = "Registrarse";
 }
 
-    <div class="container">
-        <div class="formulario">
-            <div class="f_div">
-                <form name="singup" action="">
-                    <input type="text" placeholder=@ViewData["Tipo"]>
-                    <input type="text" placeholder="Apellido">
-                    <input type="text" placeholder="Identificacion">
-                    <input type="text" placeholder="Correo Electronico">
-                    <select id="select">
+<div class="container">
+    <div class="formulario">
+        <div class="f_div">
+            <form name ="singup" id="singup" method="POST">
+                <div>
+                    <input required type="text" asp-for="Empleado.Nombre" placeholder=Nombre>
+                    <span asp-validation-for="Empleado.Nombre"></span>
+                </div>
+                <div>
+                    <input required type="text" asp-for="Empleado.Apellido" placeholder="Apellido">
+                    <span asp-validation-for="Empleado.Apellido"></span>
+                </div>
+                <div>
+                    <input required type="text" asp-for="Empleado.Cedula" asp-for="Empleado.Password" placeholder="Identificacion" id="cc">
+                    <span asp-validation-for="Empleado.Cedula"></span>
+                </div>
+                <div>
+                    <input required type="text" asp-for="Empleado.Usuario" placeholder="Correo Electronico">
+                    <span asp-validation-for="Empleado.Usuario"></span>
+                </div>
+                <div>
+                    <input type="password" asp-for="Empleado.Password" placeholder="Contraseña" id="psw" style="display: none;"> 
+                    <span asp-validation-for="Empleado.Password"></span>
+                </div>
+                <div>
+                    <select required id="select" asp-for="Empleado.Cargo">
                         <option disabled selected>Seleccione su cargo</option>
                         <option value="AdminCompras">Administrador de Compras</option>
                         <option value="AdminVentas">Administrador de Ventas</option>
                         <option value="Vendedor">Vendedor</option>
                     </select>
-                    <select id="select">
+                    <span asp-validation-for="Empleado.Cargo"></span>
+                </div>
+                <div>
+                    <select required id="select" asp-for="Empleado.Sucursal">
                         <option disabled selected>Seleccione la sucursal</option>
-                        <option value="Vdll">Valle de Lili</option>
-                        <option value="SntDmg">Santo Domingo</option>
-                        <option value="Rsvlt">Roselvelt</option>
+                        <option value="Manizales">Manizales</option>
+                        <option value="Bogota">Bogota</option>
+                        <option value="Cali">Cali</option>
                     </select>
-                    <label for="singup">*Digite su nombre de usuario</label>
-
-                </form>
-                <button type="submit" value="" for="singup">
-                    <input type="submit" for="singup">
-                    <div class="btn-svg-singup">
-                    </div>
-                </button>
-            </div>
-            <div class="img">
-                <button class="upload_img">
-                    <input type="file" name="img" for="login">
-                    <p class="txt">Sube tu imagen</p>
-                    <img src="~/img/user.svg" alt="">
-                </button>
-                <p class="name">Nombre De Usuario</p>
-            </div>
-            <div class="menu">
-                <a href="./login.html"><p class="txt_action">Iniciar Sesión</p></a>
-                <a href="./singup.html"><p class="txt_action active">Registrarse</p></a>
-            </div>
+                    <span asp-validation-for="Empleado.Sucursal"></span>
+                </div>
+                @*<label for="singup">*Digite su nombre de usuario</label>
+                <div> *@
+                    <button id="enviar" type="submit"/>
+            </form>
+            <button type="submit" id="enviar" for="singup">
+                <div id="OnClick_" class="btn-svg-singup">
+                </div>
+            </button>
+        </div>
+        <div class="img">
+            <button class="upload_img">
+                <input type="file" name="img" form="singup">
+                <p class="txt">Sube tu imagen</p>
+                <img src="~/img/user.svg" alt="">
+            </button>
+            <p class="name">Nombre De Usuario</p>
+        </div>
+        <div class="menu">
+            <a asp-page="/LogGames/Login">
+                <p class="txt_action">Iniciar Sesión</p>
+            </a>
+            <a href="/LogGames/SingUp">
+                <p class="txt_action active">Registrarse</p>
+            </a>
         </div>
     </div>
+</div>
+
+
+@section Scripts{
+    <partial name = "_ValidationScriptsPartial"/>
+    <script>
+        document.getElementById("OnClick_").onclick=()=>{
+            document.getElementById("enviar").click();
+            document.getElementById("psw").value=document.getElementById("cc").value;
+        }
+
+
+    </script>
+}

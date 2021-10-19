@@ -53,15 +53,15 @@ nav ul li:hover a, nav ul li:hover i svg .cls-1{
     flex-flow: column-reverse nowrap;
     align-items:center ;
     justify-content: space-around;
-    padding: 0 50px;
+    padding: 15px 50px;
     border-radius: 20px;
-    box-shadow: 0 0 60px #ccc;
+    box-shadow: 0 0 60px #999;
 }
 
 .container .formulario .img {
     display: block;
     text-align: center;
-    height: 40%;
+    height: 35%;
     border-radius: 70%;
     padding: 5px 0;
 }
@@ -130,12 +130,14 @@ nav ul li:hover a, nav ul li:hover i svg .cls-1{
     font-size: 20px;
 }
 
+
+
 .formulario .f_div {
     width: 100%;
-    height: 40%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -161,13 +163,13 @@ button input[type="submit"]{
 }
 
 .container .formulario form{
-    height: 100px;
+    height: 55%;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-form [placeholder="Usuario"], form [placeholder="Contraseña"], form *, form #select{
+form div [placeholder="Usuario"], form div input, div #select{
     border-style: none;
     width: 250px;
     border-bottom: 2px solid var(--morado);
@@ -245,7 +247,7 @@ form label {
 
 form #select {
     outline: none;
-    height: 100px;
+    /* height: 100px; */
     appearance: none;
     position: relative;
 }
@@ -268,9 +270,17 @@ form #select::before{
     border-bottom: 2px solid var(--morado);
 }
 .formulario .menu{
-    justify-content: center
+    justify-content: center;
+    height:15%;
 }
 
 .formulario .menu a{
     margin: 0 10px 0 0;
+    display: inline-block;
 }
+
+
+form #enviar{
+    display: none;
+}
+/*************************************/

@@ -1,0 +1,11 @@
+.container .formulario{
+    height: 50%;
+}
+
+.formulario .f_div{
+    height: 10%;
+}
+
+.container .formulario .warning img{
+    width:100px;
+}

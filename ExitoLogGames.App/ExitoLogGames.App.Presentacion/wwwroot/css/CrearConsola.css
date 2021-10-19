@@ -1,0 +1,66 @@
+.container {
+    height: 100vh;
+}
+.container .formulario{
+    margin-top: 40px;
+    height: 90%;
+    width: 50%;
+    /* justify-content: center;
+    justify-items: center; */
+}
+
+.container .formulario .f_div {
+    width: 50vw;
+    height: 60%;
+    margin-top:10%;
+    align-items: flex-start;
+}
+
+.container .formulario .f_div form button[type="submit"]{
+    padding:10px 0;
+    width:50%;
+    height: 30%;
+    border-radius: 10px;
+    overflow: visible;
+    background: var(--morado);
+    color: white;
+    margin: 10px auto;
+    font-family: var(--f-bold);
+}
+
+.container .formulario form{
+    width:70%;
+    height: 100%
+}
+
+form div [placeholder="Usuario"], form div input, div #select {
+    width: 100%;
+}
+
+.container .formulario .warning img{
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.container .formulario .warning{
+    height: 25%;
+}
+
+.formulario .menu{
+    height: 5%;
+}
+
+.container .formulario .warning #btnCrear{
+    width: 60%;
+    height: 25%;
+    display: block;
+    background:var(--morado);
+    color: white;
+    font-family: var(--f-bold);
+    border-radius: 5px;
+    text-align: center;
+    padding: 2% 0 0% 0;
+    font-size: 14px;
+
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj": {}
+    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj": {}
   },
   "projects": {
-    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
+    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
+        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
         "projectName": "ExitoLogGames.App.Dominio",
-        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
+        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\",
-        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\obj\\",
+        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jhoan Burbano\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -57,14 +61,14 @@
         }
       }
     },
-    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
+    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
+        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
         "projectName": "ExitoLogGames.App.Persistencia",
-        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
+        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\",
-        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\obj\\",
+        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jhoan Burbano\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,8 +82,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
-                "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj"
+              "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
+                "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj"
               }
             }
           }
@@ -133,14 +137,14 @@
         }
       }
     },
-    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj": {
+    "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
+        "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
         "projectName": "ExitoLogGames.App.Presentacion",
-        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
+        "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
         "packagesPath": "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\",
-        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\obj\\",
+        "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jhoan Burbano\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -154,11 +158,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
-                "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj"
+              "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
+                "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj"
               },
-              "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
-                "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj"
+              "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
+                "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj"
               }
             }
           }
@@ -172,6 +176,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -181,6 +193,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "System.Net.Mail": {
+              "target": "Package",
+              "version": "[1.0.0-rtm-00002, )"
             }
           },
           "imports": [

@@ -1,0 +1,87 @@
+.container .formulario {
+    width: 90%;
+}
+
+.container .formulario .warning{
+    height:30%;
+}
+.container .formulario .warning #btnCrear{
+    width: 20%;
+    height: 100%;
+    display: block;
+    background:var(--morado);
+    color: white;
+    font-family: var(--f-bold);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1% 0 0% 0;
+
+}
+
+.container .formulario .t_div{
+    overflow-y:auto;
+}
+
+.container .formulario .t_div{
+    margin-top: 50px;
+    width: 90%;
+    height: 70%;
+}
+
+
+.container .formulario {
+    display: grid;
+    grid-template-areas: 
+    "mnu mnu mnu mnu mnu"
+    "wrn wrn wrn wrn wrn"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    "tbl tbl tbl tbl tbl"
+    ;
+    justify-items: center;
+}
+
+.container .formulario .menu{
+    grid-area: mnu;
+}
+.container .formulario .warning{
+    grid-area: wrn;
+}
+.container .formulario .t_div{
+    grid-area: tbl;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+    border: 3px solid var(--morado);
+    border-radius: 10px;
+}
+
+.container .formulario .t_div .card{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ccc;
+    box-shadow: 0px 0px 12px #371a4e;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .formulario .t_div .card:hover{
+    transform: rotate(.5deg) scale(1.02);
+
+}
+
+.container .formulario .t_div .card .desc{
+
+    line-height: 180%;
+}
