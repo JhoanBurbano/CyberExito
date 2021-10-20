@@ -35,7 +35,7 @@
                         <span asp-validation-for="Venta.PedidoConsolas"></span>
                     </div>
                     <div>
-                        <input type="number" asp-for="Venta.CantidadConsolas" min="0" />
+                        <input type="number" placeholder="Cantidad de producto" asp-for="Venta.CantidadConsolas" min="0" />
                         <span asp-validation-for="Venta.CantidadConsolas"></span>
                     </div>
                 }
@@ -52,39 +52,48 @@
                         <span asp-validation-for="Venta.PedidoControles"></span>
                     </div>
                     <div>
-                        <input type="number" asp-for="Venta.CantidadControles" min="0" />
+                        <input type="number" placeholder="Cantidad de producto" asp-for="Venta.CantidadControles" min="0" />
                         <span asp-validation-for="Venta.CantidadControles"></span>
                     </div>
                 }
                 @if (Model.Videojuegos.Count() > 0)
                 {
                     <div>
-                        <select id="select" asp-for="Venta.PedidoControles" required>
+                        <select id="select" asp-for="Venta.PedidoVideojuegos" required>
                             <option disabled selected>Seleccione el tipo de Videojuego</option>
                             @foreach (var videojuego in Model.Videojuegos)
                             {
-
                                 <option value="@videojuego.Id">@videojuego.Nombre para @videojuego.Compatibilidad Controles
                                 </option>
                             }
                         </select>
-                        <span asp-validation-for="Venta.PedidoControles"></span>
+                        <span asp-validation-for="Venta.PedidoVideojuegos"></span>
                     </div>
                     <div>
-                        <input type="number" asp-for="Venta.CantidadControles" min="0" />
-                        <span asp-validation-for="Venta.CantidadControles"></span>
+                        <input type="number" placeholder="Cantidad de producto" asp-for="Venta.CantidadVideojuegos" min="0"
+                        placeholder="Seleccione la cantidad del producto" />
+                        <span asp-validation-for="Venta.CantidadVideojuegos"></span>
                     </div>
                 }
 
                 <div>
-                    <input type="Date" placeholder="Precio de Venta Unitario" asp-for="Venta.Fecha" id="fecha" readonly
-                        value="" autocomplete>
+                    <input type="Date"  asp-for="Venta.Fecha" id="fecha" value=""
+                        autocomplete>
                     <span asp-validation-for="Venta.Fecha"></span>
                 </div>
                 <div>
-                    <input type="number" placeholder="Total" asp-for="Venta.Total" id="Total" readonly
-                        value="" onkeyup="calcular()" autocomplete>
+                    <input type="number" placeholder="Total" asp-for="Venta.Total" id="Total" value=""
+                        onkeyup="calcular()" autocomplete>
                     <span asp-validation-for="Venta.Fecha"></span>
+                </div>
+                <div>
+                    <select id="select" asp-for="Venta.Pagada" required>
+                        <option disabled selected>Seleccione el estado</option>
+                        <option value="true">Pagada</option>
+                        <option value="false">Pendiente
+                        </option>
+                    </select>
+                    <span asp-validation-for="Venta.Pagada"></span>
                 </div>
 
 
@@ -188,8 +197,8 @@
 <script>
 
     let fecha = document.getElementById("fecha")
-    fecha.value='' + (@DateTime.Now).ToString()
-    
+    fecha.value = '' + (@DateTime.Now).ToString()
+
 
 
 

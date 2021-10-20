@@ -6524,11 +6524,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
+      "projectUniqueName": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
       "projectName": "ExitoLogGames.App.Presentacion",
-      "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
+      "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\ExitoLogGames.App.Presentacion.csproj",
       "packagesPath": "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\",
-      "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\obj\\",
+      "outputPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jhoan Burbano\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6542,11 +6542,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
-              "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj"
+            "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj": {
+              "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Dominio\\ExitoLogGames.App.Dominio.csproj"
             },
-            "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
-              "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj"
+            "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj": {
+              "projectPath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj"
             }
           }
         }

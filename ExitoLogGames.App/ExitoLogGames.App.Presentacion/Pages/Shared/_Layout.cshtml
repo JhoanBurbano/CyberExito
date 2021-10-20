@@ -106,39 +106,9 @@
         </div>
         <nav>
             <ul>
-                <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.44 24.52">
-                            <defs></defs>
-                            <g id="Capa_2" data-name="Capa 2">
-                                <g id="Capa_2-2" data-name="Capa 2">
-                                    <path class="cls-1"
-                                        d="M33.29.37a.85.85,0,0,0-.7-.37H11.27a.85.85,0,0,0-.7.37.84.84,0,0,0-.09.77l.83,2.18c1,2.69,2,5.23,3,7.81a2.21,2.21,0,0,0,1.88,1.1c1.84,0,3.71,0,5.58,0s3.91,0,5.85,0a2.18,2.18,0,0,0,1.88-1.09c1-2.58,2-5.13,3-7.83l.82-2.17A.81.81,0,0,0,33.29.37Z" />
-                                    <path class="cls-1"
-                                        d="M30,16.4H13.17A2.36,2.36,0,0,1,11,14.93L5.87,2.45H1.18a1.18,1.18,0,0,1,0-2.36H5.86A2.34,2.34,0,0,1,8.05,1.56L13.16,14H30a1.18,1.18,0,0,1,0,2.36Z" />
-                                    <circle class="cls-1" cx="14.82" cy="21.73" r="2.79" />
-                                    <circle class="cls-1" cx="25.89" cy="21.73" r="2.79" />
-                                </g>
-                            </g>
-                        </svg></i><a asp-area="" asp-page="/LogGames/Login">Administrador de compras</a></li>
-                <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.64 30.79">
-                            <defs></defs>
-                            <g id="Capa_2" data-name="Capa 2">
-                                <g id="Capa_2-2" data-name="Capa 2">
-                                    <path class="cls-1"
-                                        d="M42.64,7.65V0H22.27V7.65h9.38v6.81H14V6.38H5.73v8.08H0V30.79H42.64V14.46H33.23V7.65Zm-35.59,0H12.7v6.77H7.05Zm15.84,12.6H2.16V16.73H22.89Zm.62-19H41.4V6.42H23.51Z" />
-                                    <rect class="cls-1" x="8.05" y="9.39" width="3.64" height="0.99" />
-                                    <rect class="cls-1" x="8.05" y="11.68" width="3.64" height="0.99" />
-                                </g>
-                            </g>
-                        </svg></i> <a asp-area="" asp-page="/LogGames/Login">Administrador de Ventas</a></li>
-                <li><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.44 30.17">
-                            <defs></defs>
-                            <g id="Capa_2" data-name="Capa 2">
-                                <g id="Capa_2-2" data-name="Capa 2">
-                                    <path class="cls-1"
-                                        d="M0,0V30.17H22.44V0ZM10.09,26.79H3.85V20.55h6.24Zm0-8.53H3.85V12h6.24Zm8.5,8.53H12.35V20.55h6.24Zm0-8.53H12.35V12h6.24Zm0-8.91H3.85V3.45H18.59Z" />
-                                </g>
-                            </g>
-                        </svg></i><a asp-area="" asp-page="/LogGames/Login">Vendedor</a></li>
+                <li><i class="fas fa-sign-in-alt"></i><a asp-page="/LogGames/Login">Iniciar Sesión</a></li>
+                <li><i class="fas fa-user-plus"></i><a asp-page="/LogGames/SingUp">Únete</a></li>
+                <li id="lgt"><i class="fas fa-door-open"></i><a asp-page="/LogGames/Login" >Cerrar Sesion</a></li>
             </ul>
         </nav>
     </header>
@@ -156,6 +126,7 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4d4239527.js" crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)

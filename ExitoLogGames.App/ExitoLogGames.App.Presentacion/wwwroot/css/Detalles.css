@@ -1,0 +1,62 @@
+.container {
+    height:120vh;
+}
+
+.container .formulario .f_div{
+    height:60%;
+}
+.container .formulario .warning {
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    align-items:center;
+}
+
+.container .formulario .warning .mid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+
+}
+.container .formulario .warning .tit_txt{
+    margin:0
+}
+
+.container .formulario .warning .mid .tit{
+    margin:10px;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+
+.container .formulario .warning .mid img{
+    margin-top:40px;
+    width: 40%;
+    height: auto;
+}
+
+.container .formulario .warning .mid p{
+    text-align: center;
+    width: 100%;
+}
+
+.container .formulario .f_div form #btnCrear{
+        width: 60%;
+        height: auto;
+        display: block;
+        background:var(--morado);
+        color: white;
+        font-family: var(--f-bold);
+        border-radius: 5px;
+        text-align: center;
+        padding: 2% 0 2% 0;
+        font-size: 14px;
+}
+
+
+.container .formulario .f_div form #btnCrear{
+    margin: 0 auto;
+}

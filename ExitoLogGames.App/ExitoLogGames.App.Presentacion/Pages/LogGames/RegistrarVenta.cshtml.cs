@@ -41,7 +41,6 @@ namespace ExitoLogGames.App.Presentacion.Pages.LogGames
             if(ModelState.IsValid){
                 var fact = _conexion.facturas.Add(new Factura()).Entity;
                 fact=_conexion.facturas.FirstOrDefault(x=>x.Id==fact.Id);
-                
                 await _conexion.SaveChangesAsync();
                 return RedirectToPage("/LogGames/ListaDeVentas");
             }

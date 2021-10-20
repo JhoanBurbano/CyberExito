@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g21xMnf4ZaL3krL58xLt1oXrw4IoQZkCdS7DeTW8zBeWCWlcpojVsalYq7Xwkx2wES4n9MG4RnLQg1rl1gaV2g==",
+  "dgSpecHash": "/UY/2H+rXL1x039IHIFWcsa6IN1wY6a0W/7Folqpfmq2K3fo/VWAjrEzDPTn2HXLl+8d+i6161aLIBOjwfjhcA==",
   "success": true,
-  "projectFilePath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\Lab\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
+  "projectFilePath": "D:\\Sebas Burbano\\Codigo\\C#\\Workspace\\ProyectoExito\\CyberExito\\ExitoLogGames.App\\ExitoLogGames.App.Persistencia\\ExitoLogGames.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jhoan Burbano\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

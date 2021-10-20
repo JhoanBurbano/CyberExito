@@ -1,7 +1,7 @@
 /* header{
     z-index: 10000;
 } */
-nav {
+/* nav {
     width:70%;
 }
 nav ul {
@@ -24,10 +24,6 @@ nav ul li i svg {
     width: 45px;
 }
 
-/* nav ul li:hover {
-    border: none;
-} */
-
 nav ul li a {
     cursor: pointer;
 }
@@ -36,7 +32,7 @@ nav ul li:hover a, nav ul li:hover i svg .cls-1{
     color: var(--white);
     fill: var(--white);
     cursor: pointer;
-}
+} */
 
 /*-------------------------------------------------------------------------*/
 .container{

@@ -4,101 +4,18 @@
 @{
     ViewData["Title"] = "Detalles";
     ViewData["EstiloB"] = "/css/singup.css";
-    ViewData["EstiloD"] = "/css/forget-password.css";
-    ViewData["Estilo"] = "/css/CrearConsola.css";
+    ViewData["EstiloC"] = "/css/forget-password.css";
+    ViewData["EstiloD"] = "/css/CrearConsola.css";
+    ViewData["Estilo"] = "/css/Detalles.css";
 }
 
 <div class="container">
     <div class="formulario">
-        <div class="f_div" style="z-index: -1;">
-            <form name="cConsola" id="cConsola" style="z-index: -5;">
-                @* <input type="hidden" asp-for="Consola.Id"/>
-                    <div>
-                    <select id="select" asp-for="Consola.Nombre" required readonly>
-                    <option disabled selected>Seleccione el Tipo</option>
-                    <option value="XBOX">XBOX ONE</option>
-                    <option value="NINTENDO">NINTENDO Wii</option>
-                    <option value="PLAYSTATION">PlayStation 5</option>
-                    </select>
-                    <span asp-validation-for="Consola.Nombre"></span>
-                    </div>
-                    <div>
-                    <select id="select" asp-for="Consola.Version" required readonly>
-                    <option disabled selected>Seleccione la Version</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    </select>
-                    <span asp-validation-for="Consola.Version"></span>
-                    </div>
-                    <div>
-                    <select id="select" asp-for="Consola.Fabricante" required readonly>
-                    <option disabled selected>Seleccione el Fabricante</option>
-                    <option value="Microsoft">Microsoft XBOX</option>
-                    <option value="Nintendo">Nintendo</option>
-                    <option value="Sony">Sony PlayStation</option>
-                    </select>
-                    <span asp-validation-for="Consola.Fabricante"></span>
-                    </div>
-                    <div>
-                    <select id="select" asp-for="Consola.CapacidadAlmacenamiento" required readonly>
-                    <option disabled selected>Seleccione la Capacidad de Almacenamiento</option>
-                    <option value="1TB">1 Terabyte</option>
-                    <option value="1.5TB">2,5 Terabytes</option>
-                    <option value="2TB">3 Terabytes</option>
-                    </select>
-                    <span asp-validation-for="Consola.CapacidadAlmacenamiento"></span>
-                    </div>
-                    <div>
-                    <select id="select" asp-for="Consola.Storage" required readonly>
-                    <option disabled selected>Seleccione el tipo de Disco Duro</option>
-                    <option value="HDD">HDD</option>
-                    <option value="SSD">SSD</option>
-                    <option value="Ambos">HDD & SSD</option>
-                    </select>
-                    <span asp-validation-for="Consola.Storage"></span>
-                    </div>
-                    <div>
-                    <select id="select" asp-for="Consola.VelocidadProcesamiento" required readonly>
-                    <option disabled selected>Seleccione la Velocidad de Procesamiento</option>
-                    <option value="1.66GHz">1,66 GigaHercios</option>
-                    <option value="2GHz">2 GigaHercios</option>
-                    <option value="2.23GHz">2,23 GigaHercios</option>
-                    </select>
-                    <span asp-validation-for="Consola.VelocidadProcesamiento"></span>
-                    </div>
-                    <div>
-                    <select id="select" asp-for="Consola.VelocidadRam" required readonly>
-                    <option disabled selected>Seleccione la Velocidad de Ram</option>
-                    <option value="1866MHz">1866 MegaHercios</option>
-                    <option value="1600MHz">1600 MegaHercios</option>
-                    <option value="1333MHz">1333 MegaHercios</option>
-                    </select>
-                    <span asp-validation-for="Consola.VelocidadRam"></span>
-                    </div>
-                    <div>
-                    <input type="number" placeholder="Cantidad de controles" asp-for="Consola.CantidadControles"
-                    id="ctr">
-                    <span asp-validation-for="Consola.CantidadControles"></span>
-                    </div>
-                    <div>
-                    <input type="number" placeholder="Cantidad del producto" asp-for="Consola.Cantidad">
-                    <span asp-validation-for="Consola.Cantidad"></span>
-                    </div>
-                    <div>
-                    <input type="number" placeholder="Precio de Compra Unitario" asp-for="Consola.Costo" id="costo"
-                    onkeyup="calcular()">
-                    <span asp-validation-for="Consola.Costo"></span>
-                    </div>
-                    <div>
-                    <input type="number" placeholder="Precio de Venta Unitario" asp-for="Consola.Precio" id="precio"
-                    readonly>
-                    <span asp-validation-for="Consola.Precio"></span>
-                    </div>
-                    <button style="display:none;";" type="submit" id="btnCrear">Actualizar Consola </button> *@
+        <div class="f_div">
+            <form name="cConsola" id="cConsola">
                 <div>
                     <h5 style="font-weigt=bold;">Nombre</h5>
-                    <input type="text" value="@Model.Consola.Nombre" readonly>
+                    <input type="text" value="@Model.Consola.Nombre" id="nom" readonly>
                 </div>
                 <div>
                     <h5 style="font-weigt=bold;">Version</h5>
@@ -124,42 +41,57 @@
                     <h5 style="font-weigt=bold;">Precio de Venta Unitario</h5>
                     <input type="text" value="$@Model.Consola.Precio" readonly>
                 </div>
+                <br /><a asp-page="/LogGames/ListaDeConsolas" id="btnCrear">Volver a la Lista de Consolas</a>
             </form>
         </div>
         <div class="warning">
-            <img src="~/img/GCircle.svg" alt="">
             @switch (Model.Consola.Nombre)
             {
                 case "XBOX":
-                    <p class="tit"><b>Detalles de XBOX ONE </b></p>
-                    <img src="https://compass-ssl.xbox.com/assets/08/7e/087efc15-7859-4641-afbc-bfddf11ba960.jpg?n=X1S-2020_Page-Hero-0_Upgrade_767x431.jpg"
-                class="tit_txt" />
+                    <div class="mid">
+                        <p class="tit"><b>Detalles de XBOX ONE </b></p>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_962057-MCO44773036949_022021-O.webp" class="tit_txt" />
+                    </div>
                     break;
                 case "NINTENDO":
-                    <p class="tit"><b>Detalles de NINTENDO Wii </b></p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Wii_console.png" class="tit_txt" />
+                    <div class="mid">
+                        <p class="tit"><b>Detalles de NINTENDO Wii </b></p>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_840265-MLV28203250279_092018-O.jpg" class="tit_txt" />
+                    </div>
                     break;
                 case "PLAYSTATION":
-                    <p class="tit"><b>Detalles de PlayStation 5 </b></p>
-                    <img src="https://static2.diariosur.es/www/multimedia/202006/12/media/play5.jpg" class="tit_txt" />
+                    <div class="mid">
+                        <p class="tit"><b>Detalles de PlayStation 5 </b></p>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_911021-MCO46913163652_072021-O.webp" class="tit_txt" />
+                    </div>
                     break;
             }
 
-            <br><br><a asp-page="/LogGames/ListaDeConsolas" id="btnCrear">Volver a la Lista de Consolas</a>
             </p>
-        </div>
-        <div class="menu">
-            <a href="">
-                <p class="txt_action active">Consola</p>
-            </a>
-            <a href="">
-                <p class="txt_action">Control</p>
-            </a>
-            <a href="">
-                <p class="txt_action">Videojuego</p>
-            </a>
         </div>
     </div>
 </div>
 
 
+@section Scripts{
+<script>
+    document.body.onload = () => {
+        var nom = document.querySelector("#nom")
+        var cb;
+        switch (nom.value) {
+            case "XBOX":
+                cb = "XBOX One";
+                break;
+            case "NINTENDO":
+                cb = "NINTENDO Wii";
+                break;
+            case "PLAYSTATION":
+                cb = "PlayStation 5";
+                break;
+        }
+
+        nom.value = cb;
+
+    }
+</script>
+}

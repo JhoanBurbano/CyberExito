@@ -34,6 +34,7 @@ header{
     width: 100vw;
     height: 20vh;
     z-index: 100000!important;
+    font-size: 20px;
 }
 
 .logo{
@@ -65,7 +66,8 @@ nav ul i{
     min-width: 20px;
     width: 30px;
     max-width: 40px;
-    margin-right: 10px;
+    margin-right: 20px;
+    font-size:25px;
 }
 
 nav ul li:nth-child(3) i{
@@ -75,7 +77,7 @@ nav ul li:nth-child(3) i{
 
 nav ul li {
     display: flex;
-    margin: 0 15px;
+    margin: 0 40px;
     align-items: center;
 }
 
@@ -85,7 +87,7 @@ nav ul li i svg .cls-1{
 
 nav ul li a {
     color: var(--white);
-    font-family: var(--f-bold);
+    font-family: var(--f-normal);
 }
 
 nav ul li:hover a , nav ul li:hover i svg .cls-1{
@@ -224,14 +226,22 @@ footer {
 
 @keyframes snext {
     0%{
+        transform: translateX(-200%);
+        opacity: 1;
+    }
+    20%{
         transform: translateX(0);
         opacity: 1;
     }
-    50%{
+    80%{
         transform: translateX(0);
         opacity: 1;
     }100%{
         transform: translateX(200%);
         opacity: 0;
     }
+}
+
+#lgt{
+    display: none;
 }

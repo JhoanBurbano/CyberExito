@@ -21,23 +21,34 @@
                             @switch (consola.Nombre)
                             {
                                 case "XBOX":
+                                    <div class="xbx">
+
+                                    </div>
                                     <h3>XBOX One</h3>
                                     break;
                                 case "NINTENDO":
+                                    <div class="ntn">
+
+                                    </div>
                                     <h3>NINTENDO Wii</h3>
                                     break;
                                 case "PLAYSTATION":
+                                    <div class="ps">
+
+                                    </div>
                                     <h3>PlayStation 5</h3>
                                     break;
                             }
-                            
-                            
+
+
                             <p>@Html.DisplayFor(k=>consola.Version)</p>
                             <p>@Html.DisplayFor(k=>consola.CantidadControles) controles</p>
                             <p>USD &nbsp;<b>$@Html.DisplayFor(k=>consola.Precio)</b></p>
-                            <a asp-page="/LogGames/Detalles" asp-route-id="@consola.Id" class="btn">Detalles</a>
-                            <a asp-page="/LogGames/EditarProducto" asp-route-id="@consola.Id" class="btn">Update</a>
-                            <a asp-page="/LogGames/Delete" asp-route-id="@consola.Id" class="btn">Delete</a>
+                            <div class="botones">
+                                <a asp-page="/LogGames/Detalles" asp-route-id="@consola.Id" class="btn d" title="detalles">D</a>
+                                <a asp-page="/LogGames/EditarProducto" asp-route-id="@consola.Id" class="btn u" title="actualizar">A</a>
+                                <a asp-page="/LogGames/Delete" asp-route-id="@consola.Id" class="btn b" title="borrar">B</a>
+                            </div>
                         </div>
                     </div>
                 }
@@ -69,3 +80,25 @@
         </div>
     </div>
 </div>
+
+
+@section Scripts{
+<script>
+    document.body.onload = () => {
+        var cards = document.querySelectorAll(".card")
+        for (card of cards) {
+            switch (card.querySelector(".desc").querySelector("h3").innerText) {
+                case "XBOX One":
+                    card.classList.add("x")
+                    break;
+                case "NINTENDO Wii":
+                    card.classList.add("n")
+                    break;
+                case "PlayStation 5":
+                    card.classList.add("p")
+                    break;
+            }
+        }
+    }
+</script>
+}
